@@ -261,7 +261,7 @@ function hasPref ($sessionId, $pref="showLDSTempleInfo") {
                            <!-- Search -> Genealogies -->
                            <li id="menu-item-39796"
                               class="menu-item icon-search menu-item-type-custom menu-item-object-custom menu-item-39796">
-                              <a href="https://www.familysearch.org/search/tree"><?php $t ('header-genealogies');?></a>
+                              <a href="https://www.familysearch.org/search/family-trees"><?php $t ('header-genealogies');?></a>
                            </li>
                            <!-- Search -> Catalog -->
                            <li id="menu-item-39797"
@@ -271,7 +271,7 @@ function hasPref ($sessionId, $pref="showLDSTempleInfo") {
                            <!-- Search -> Books -->
                            <li id="menu-item-39798"
                               class="menu-item icon-search menu-item-type-custom menu-item-object-custom menu-item-39798">
-                              <a href="https://books.familysearch.org/"><?php $t ('header-books');?></a>
+                              <a href="https://www.familysearch.org/library/books"><?php $t ('header-books');?></a>
                            </li>
                            <!-- Search -> Research Wiki -->
                            <li id="menu-item-39799"
@@ -432,7 +432,7 @@ function hasPref ($sessionId, $pref="showLDSTempleInfo") {
                         </li>
                         <!-- Search -> Genealogies -->
                         <li class="menu-item icon-search menu-item-type-custom menu-item-object-custom menu-item-39796">
-                           <a href="https://www.familysearch.org/search/tree"><?php $t ('header-genealogies');?></a>
+                           <a href="https://www.familysearch.org/search/family-trees"><?php $t ('header-genealogies');?></a>
                         </li>
                         <!-- Search -> Catalog -->
                         <li class="menu-item icon-search menu-item-type-custom menu-item-object-custom menu-item-39797">
@@ -440,7 +440,7 @@ function hasPref ($sessionId, $pref="showLDSTempleInfo") {
                         </li>
                         <!-- Search -> Books -->
                         <li class="menu-item icon-search menu-item-type-custom menu-item-object-custom menu-item-39798">
-                           <a href="https://books.familysearch.org/"><?php $t ('header-books');?></a>
+                           <a href="https://www.familysearch.org/library/books"><?php $t ('header-books');?></a>
                         </li>
                         <!-- Search -> Research Wiki -->
                         <li class="menu-item icon-search menu-item-type-custom menu-item-object-custom menu-item-39799">
