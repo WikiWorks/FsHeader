@@ -525,8 +525,8 @@ if ( $sessionId ) {
    </div><!-- .container -->
    <div class="et_search_outer">
       <div class="container et_search_form_container">
-         <!-- the following line may need to be changed in order to search the correct location, currently searching the blog? -->
-         <form role="search" method="get" class="et-search-form" action="https://familysearch.org/blog">
+         <!-- The search form seems to function (ajax?) regardless of what the form action is -->
+         <form role="search" method="get" class="et-search-form" action="index.php">
             <input type="search" class="et-search-field" placeholder="<?php $t ('header-searchboxplaceholder');?>" value="" name="s"
                title="<?php $t ('header-searchfor');?>:">
          </form>
