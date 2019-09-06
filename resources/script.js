@@ -6,7 +6,7 @@
 	var ff = document.getElementById('fs-footer');
 	var f = document.getElementById('footer');
 	if (f && ff) {
-		f.append(ff);
+		f.appendChild(ff);
 	}
 
 	// desktop insertion point
@@ -24,9 +24,9 @@
 	}
 	if ( isApi ) {
 		var body = document.querySelector('body');
-		body.prepend(h);
+		body.insertBefore(h, body.firstChild);
 	} else {
-		a.prepend(h);
+		a.insertBefore(h, a.firstChild);
 	}
 
 	// change the footer layout for mobile
