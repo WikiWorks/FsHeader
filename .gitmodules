@@ -1,0 +1,3 @@
+[submodule "resources/jQuery-rwdImageMaps"]
+	path = resources/jQuery-rwdImageMaps
+	url = https://github.com/stowball/jQuery-rwdImageMaps.git
