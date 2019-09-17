@@ -1,4 +1,9 @@
-// jQuery(document).ready(function ($) {
+$(document).ready(function(e) {
+
+	// responsive image maps
+	$('img[usemap]').rwdImageMaps();
+
+
 
 	// move the main-header to the top of the page
 	var h = document.getElementById('main-header');
@@ -102,8 +107,8 @@
 		}
 	});
 
-// });
 
+});
 
 
 // We use this function to determine the current wiki based on path

@@ -36,7 +36,7 @@
 			"dependencies": [],
 			"messages": [],
 			"styles": ["header.css", "footer.css", "common.css"],
-			"scripts": ["script.js"],
+			"scripts": ["script.js", "jQuery-rwdImageMaps/jquery.rwdImageMaps.js"],
 			"targets": ["desktop", "mobile"]
 		}
 	},
