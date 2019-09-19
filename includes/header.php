@@ -213,7 +213,7 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
                   <span class="mobile_menu_bar mobile_menu_bar_toggle"><?php $t ('header-more');?></span>
 
                   <ul id="top-menu" class="nav">
-					<?php if ( ${wgUser['mId']} == 0 ) { ?>
+					<?php if ( $wgUser->mId == 0 ) { ?>
 					<div class="mobile-account ">
 
 					 <a href="/auth/familysearch/login?fhf=true" class="mobile-account-first fs-button fs-button--small fs-button--recommended" data-config="lo_hdr_login" data-component-init="AdobeLinkTracker"><?php $t ('header-signin');?></a>
