@@ -3,44 +3,6 @@ $(document).ready(function(e) {
 	// responsive image maps
 	$('img[usemap]').rwdImageMaps();
 
-
-
-	// move the main-header to the top of the page
-	var h = document.getElementById('main-header');
-	// move the footer to the bottom of the page
-	var ff = document.getElementById('fs-footer');
-	var f = document.getElementById('footer');
-	if (f && ff) {
-		f.appendChild(ff);
-	}
-
-	// desktop insertion point
-	var a = document.getElementById('mw-page-base');
-	var isMobile = false;
-	var isApi = false;
-	if ( a == null ) {
-		// mobile insertion point
-		a = document.getElementById('mw-mf-viewport');
-		isMobile = true;
-		if ( a == null ) {
-			isMobile = false;
-			isApi = true;
-		}
-	}
-	if ( isApi ) {
-		var body = document.querySelector('body');
-		body.insertBefore(h, body.firstChild);
-	} else {
-		a.insertBefore(h, a.firstChild);
-	}
-
-	// change the footer layout for mobile
-    if ( isMobile ) {
-		$('#fs-footer').css({"width":"80%", "left":"1.25rem", "padding-bottom":"1.5rem"});
-
-	}
-
-
 	var mobile_menus = $(".mobile_nav .menu-item-has-children .sub-menu").hide();
 
 	//on page resize re-calculate the left padding on the nav menu

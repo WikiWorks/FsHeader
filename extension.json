@@ -20,7 +20,8 @@
 		}
 	},
 	"Hooks": {
-		"BeforePageDisplay": "MediaWiki\\Extension\\FsHeader\\Hooks::onBeforePageDisplay"
+		"BeforePageDisplay": "MediaWiki\\Extension\\FsHeader\\Hooks::onBeforePageDisplay",
+		"SkinTemplateOutputPageBeforeExec": "MediaWiki\\Extension\\FsHeader\\Hooks::onSkinTemplateOutputPageBeforeExec"
 	},
 	"MessagesDirs": {
 		"FsHeader": [
@@ -32,10 +33,18 @@
 		"remoteExtPath": "FsHeader/resources"
 	},
 	"ResourceModules": {
-		"ext.FsHeader": {
+		"z.ext.FsHeader.styles": {
 			"dependencies": [],
 			"messages": [],
+			"position": "top",
 			"styles": ["header.css", "footer.css", "common.css"],
+			"scripts": [],
+			"targets": ["desktop", "mobile"]
+		},
+		"ext.FsHeader.scripts": {
+			"dependencies": [],
+			"messages": [],
+			"styles": [],
 			"scripts": ["script.js", "jQuery-rwdImageMaps/jquery.rwdImageMaps.js"],
 			"targets": ["desktop", "mobile"]
 		}

@@ -108,6 +108,16 @@
 	}
 */
 	@media screen and (max-width: 991px) {
+
+		body #fs-footer {
+			padding: 1.5rem 0;
+			margin: 0 10%;
+		}
+
+		body #mw-mf-viewport {
+			height: auto;
+		}
+
 		body #fs-footer .footer-container span.church-logo-container {
 			text-align:center;
 		}
@@ -118,5 +128,11 @@
 			position:relative;
 			bottom:80px;
 			}
+
+		body #fs-footer {
+			margin-left: 11em;
+			padding: 0 1.25em 1.5em 1.25em;
+		}
+
 	}
-}  	/* end media all */
+  	/* end media all */
