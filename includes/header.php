@@ -160,7 +160,7 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
                                     <!-- Research Wiki -->
                                     <li id="menu-item-39427"
                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39427">
-                                       <a href="/wiki/en"><?php $t ('header-researchwiki');?></a>
+                                       <a href="/wiki/<?php $t ('header-language');?>"><?php $t ('header-researchwiki');?></a>
                                     </li>
                                     <!--What's New -->
                                     <li id="menu-item-39425"
@@ -288,7 +288,7 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
                            <!-- Search -> Research Wiki -->
                            <li id="menu-item-39799"
                               class="menu-item icon-search menu-item-type-custom menu-item-object-custom menu-item-39799">
-                              <a href="/wiki/en/Main_Page"><?php $t ('header-researchwiki');?></a>
+                              <a href="/wiki/<?php $t ('header-language');?>/Main_Page"><?php $t ('header-researchwiki');?></a>
                            </li>
                         </ul>
                      </li>
@@ -382,7 +382,7 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
                         </li>
                         <!-- Help -> Research Wiki -->
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39427">
-                           <a href="/wiki/en"><?php $t ('header-researchwiki');?></a>
+                           <a href="/wiki/<?php $t ('header-language');?>"><?php $t ('header-researchwiki');?></a>
                         </li>
                         <!-- Help -> What's New -->
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39425">
@@ -456,7 +456,7 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
                         </li>
                         <!-- Search -> Research Wiki -->
                         <li class="menu-item icon-search menu-item-type-custom menu-item-object-custom menu-item-39799">
-                           <a href="/wiki/en/Main_Page"><?php $t ('header-researchwiki');?></a>
+                           <a href="/wiki/<?php $t ('header-language');?>/Main_Page"><?php $t ('header-researchwiki');?></a>
                         </li>
                      </ul>
                   </li><!-- end Search menu and dropdown -->
