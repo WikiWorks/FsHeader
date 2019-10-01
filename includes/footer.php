@@ -1,6 +1,6 @@
 
 <!-- Create the menu items in the appropriate language for the footer : "About   Blog   Site Map    Solutions Gallery   Cookie Preferences"-->
-<div id="fs-footer" style="width:100%; z-index:2; left:-0.25rem; padding-bottom:1.5rem;">
+<div id="fs-footer">
 	<!-- when > = 992px -->
 	<div class="footer-container">
 		<div class="footer-nav">

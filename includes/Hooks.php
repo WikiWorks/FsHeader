@@ -20,7 +20,9 @@
 namespace MediaWiki\Extension\FsHeader;
 
 use OutputPage;
+use QuickTemplate;
 use Skin;
+use SkinTemplate;
 
 class Hooks {
 
@@ -30,29 +32,10 @@ class Hooks {
 	 * @param Skin $skin Skin object that will be used to generate the page
 	 */
 	public static function onBeforePageDisplay( OutputPage $out, Skin $skin ) {
-		$out->addModules ("ext.FsHeader");
+		$out->addModuleStyles( "z.ext.FsHeader.styles" );
+		$out->addModules ("ext.FsHeader.scripts");
 
 		global $wgUser;
-
-		$t = function ( $key ) use ( $out ) {
-			echo $out->msg( $key )->inContentLanguage()->escaped();
-		};
-
-		ob_start();
-		require "footer.php";
-		$html = ob_get_contents();
-		ob_end_clean();
-		$out->addHTML($html);
-
-		ob_start();
-		require "header.php";
-		$html = ob_get_contents();
-		// get rid of the output buffer so it isn't flushed automatically
-		ob_end_clean();
-		// output the header at the end of the content
-		// we fix it up with javascript
-		$out->addHtml($html);
-
 
 		// modify the login links
 		if ( $wgUser->isLoggedIn() ) {
@@ -63,4 +46,31 @@ class Hooks {
 		return true;
 	}
 
+	public static function onSkinTemplateOutputPageBeforeExec( SkinTemplate &$skinTemplate, QuickTemplate &$tpl ){
+
+		global $wgUser;
+
+		$out = $tpl->getSkin()->getOutput();
+
+		$t = function ( $key ) use ( $out ) {
+			echo $out->msg( $key )->inContentLanguage()->escaped();
+		};
+
+		ob_start();
+		require "footer.php";
+		$html = ob_get_contents();
+		ob_end_clean();
+
+		$tpl->set( 'bottomscripts', $tpl->get( 'bottomscripts' ) . $html );
+
+		ob_start();
+		require "header.php";
+		$html = ob_get_contents();
+		// get rid of the output buffer so it isn't flushed automatically
+		ob_end_clean();
+
+		$tpl->set( 'headelement', $tpl->get( 'headelement' ) . $html );
+
+		return true;
+	}
 }
