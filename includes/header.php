@@ -263,7 +263,7 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
                            <!-- Search -> Records -->
                            <li id="menu-item-39794"
                               class="menu-item icon-search menu-item-type-custom menu-item-object-custom menu-item-39794">
-                              <a href="https://www.familysearch.org/records"><?php $t ('header-records');?></a>
+                              <a href="https://www.familysearch.org/search"><?php $t ('header-records');?></a>
                            </li>
                            <!-- Search -> Family Tree -->
                            <li id="menu-item-39795"
