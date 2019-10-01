@@ -288,7 +288,7 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
                            <!-- Search -> Research Wiki -->
                            <li id="menu-item-39799"
                               class="menu-item icon-search menu-item-type-custom menu-item-object-custom menu-item-39799">
-                              <a href="/wiki/<?php $t ('header-language');?>/Main_Page"><?php $t ('header-researchwiki');?></a>
+                              <a href="/wiki/<?php $t ('header-language');?>"><?php $t ('header-researchwiki');?></a>
                            </li>
                         </ul>
                      </li>
@@ -456,7 +456,7 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
                         </li>
                         <!-- Search -> Research Wiki -->
                         <li class="menu-item icon-search menu-item-type-custom menu-item-object-custom menu-item-39799">
-                           <a href="/wiki/<?php $t ('header-language');?>/Main_Page"><?php $t ('header-researchwiki');?></a>
+                           <a href="/wiki/<?php $t ('header-language');?>"><?php $t ('header-researchwiki');?></a>
                         </li>
                      </ul>
                   </li><!-- end Search menu and dropdown -->
