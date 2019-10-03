@@ -3,18 +3,16 @@ $(document).ready(function(e) {
 	// responsive image maps
 	$('img[usemap]').rwdImageMaps();
 
-
-
-	// move the main-header to the top of the page
-	var h = document.getElementById('main-header');
-	// move the footer to the bottom of the page
+	//////////////// mobile footer placement ////////////////////////
+	// mobile skin uses <footer> while desktop uses <div id='footer'>
+	var f = document.querySelector('footer');
 	var ff = document.getElementById('fs-footer');
-	var f = document.getElementById('footer');
-	if (f && ff) {
+	if ( f != null ) {
 		f.appendChild(ff);
 	}
 
-	// desktop insertion point
+	var h = document.getElementById('main-header');
+	// mw-page-base is only found in desktop view
 	var a = document.getElementById('mw-page-base');
 	var isMobile = false;
 	var isApi = false;
@@ -27,18 +25,12 @@ $(document).ready(function(e) {
 			isApi = true;
 		}
 	}
-	if ( isApi ) {
-		var body = document.querySelector('body');
-		body.insertBefore(h, body.firstChild);
-	} else {
+	if ( isMobile ) {
 		a.insertBefore(h, a.firstChild);
+		console.log ('moved header for mobile');
 	}
+	///////////// end mobile footer placement ///////////////////////
 
-	// change the footer layout for mobile
-    if ( isMobile ) {
-		$('#fs-footer').css({"width":"80%", "left":"1.25rem", "padding-bottom":"1.5rem"});
-
-	}
 
 
 	var mobile_menus = $(".mobile_nav .menu-item-has-children .sub-menu").hide();
