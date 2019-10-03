@@ -3,6 +3,36 @@ $(document).ready(function(e) {
 	// responsive image maps
 	$('img[usemap]').rwdImageMaps();
 
+	//////////////// mobile footer placement ////////////////////////
+	// mobile skin uses <footer> while desktop uses <div id='footer'>
+	var f = document.querySelector('footer');
+	var ff = document.getElementById('fs-footer');
+	if ( f != null ) {
+		f.appendChild(ff);
+	}
+
+	var h = document.getElementById('main-header');
+	// mw-page-base is only found in desktop view
+	var a = document.getElementById('mw-page-base');
+	var isMobile = false;
+	var isApi = false;
+	if ( a == null ) {
+		// mobile insertion point
+		a = document.getElementById('mw-mf-viewport');
+		isMobile = true;
+		if ( a == null ) {
+			isMobile = false;
+			isApi = true;
+		}
+	}
+	if ( isMobile ) {
+		a.insertBefore(h, a.firstChild);
+		console.log ('moved header for mobile');
+	}
+	///////////// end mobile footer placement ///////////////////////
+
+
+
 	var mobile_menus = $(".mobile_nav .menu-item-has-children .sub-menu").hide();
 
 	//on page resize re-calculate the left padding on the nav menu
