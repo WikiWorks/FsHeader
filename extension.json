@@ -37,7 +37,7 @@
 			"dependencies": [],
 			"messages": [],
 			"position": "top",
-			"styles": ["header.css", "footer.css", "common.css"],
+			"styles": ["header.css", "common.css"],
 			"scripts": [],
 			"targets": ["desktop", "mobile"]
 		},
