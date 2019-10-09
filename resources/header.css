@@ -722,7 +722,6 @@ header#main-header * {
 		color: #006DCC!important;
 		font-size: 12px;
 		line-height: unset;
-		height: auto;
 		display: inline;
 		padding: 6px 8px;
 		border: 1px solid transparent;
@@ -1184,7 +1183,7 @@ html.mobile-menu-open body {
 		}
 	}
 	#mw-navigation #mw-head {
-		top: 83px !important;
+		top: 77px;
 		z-index: 0 !important;
 	}
 	/*@media (max-width:985px) and (min-width: 768px){
