@@ -1,8 +1,100 @@
+/******************************************************************************
+Contents ordered from general to most specific
+1. Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).
+2. Class selectors (e.g., .foo), attributes selectors (e.g., [type=“radio”]) 
+   and pseudo-classes (e.g., :hover).
+3. ID selectors (e.g., #example).
+https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+
+******************************************************************************/
+
 .overlay-header-container.position-fixed, .overlay-footer-container.position-fixed {
     padding-top: 73px;
 }
 
-@media screen and (min-width: 1400px) {
+
+/******************************************************************************
+1. Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).
+******************************************************************************/
+dd {
+    margin-bottom: 0.5em;
+}
+
+input[type=number], 
+input[type=email], 
+input[type=url], 
+input[type=search] {
+    height: 2.5em;
+    padding: 0.1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+input[type=tel], 
+input[type=color], 
+input[type=password], 
+input[type=datetime], 
+input[type=datetime-local], 
+input[type=date], 
+input[type=month], 
+input[type=time], 
+input[type=week], 
+input[type=text] {
+    font: 13.3333px Arial;
+    font-size: .875em;
+    width: 100%;
+    border-image: initial;
+    color: #252525;
+    box-shadow: none;
+    padding: 1.185em;
+    height: 2.275em;
+    line-height: 1.275;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+}
+
+label {
+    font-size: 0.875em !important;
+    font-weight: normal;
+    color: #252525;
+}
+
+[class^="mw-htmlform-field"] label {
+    color: inherit;
+    display: inline;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    cursor: initial;
+}
+
+select {
+    border-color: rgb(169, 169, 169);
+    border-width: 1px;
+    border-style: solid;
+    font-size: 1rem;
+    font-family: inherit;
+    height: 25px;
+    width: auto;
+    padding: 2px 6px 3px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+
+/******************************************************************************
+2. Class selectors (e.g., .foo), attributes selectors (e.g., [type=“radio”]) 
+   and pseudo-classes (e.g., :hover).
+******************************************************************************/
+
+/* Remove the blue box-shadow when hovering over header items, which is set by the skin Minerva  */
+nav ul li a:hover {
+    box-shadow: unset!important;
+}
+
+/* e.g. https://beta.familysearch.org/wiki/en/United_States_Genealogy
+   e.g. https://beta.familysearch.org/wiki/en/User:Ahancey/Sandbox-columns */
+   @media screen and (min-width: 1400px) {
     .column-resize {
         column-count: 5;
         padding-left: 9% !important;
@@ -37,38 +129,10 @@
     }
 }
 
-// Remove the blue box-shadow when hovering over header items, which is set by the skin Minerva 
+/* ????The following classes are used for the creation
+of the flexbox on the main page of the wiki ???
 
-nav ul li a:hover {
-    box-shadow: unset!important;
-}
-
-#menu-header-links-bottom.menu {
-    list-style: none;
-}
-
-/*#mw-head {
-    top:80px !important;
-}*/
-
-#footer ul li {
-    padding-bottom: 0!important;
-}
-
-/*#simpleSearch #searchInput {
-    padding: 0.2em 0 0.5em 0.2em!important;
-}*/
-
-#pt-uls a.uls-trigger {
-    display: none;
-}
-
-#wikiEditor-ui-toolbar {
-    height: 32px;
-}
-
-/* The following classes are used for the creation
-of the flexbox on the main page of the wiki */
+DELETE ME = NOT FOUND
 
 .row-1 {
     display: flex;
@@ -108,8 +172,10 @@ of the flexbox on the main page of the wiki */
         vertical-align: middle;
     }
 }
+*/
 
-.mw-customtoggle, .mw-collapsible-toggle {
+.mw-customtoggle, 
+.mw-collapsible-toggle {
     background: none !important;
     border: none !important;
     font-size: 1rem !important;
@@ -117,6 +183,10 @@ of the flexbox on the main page of the wiki */
     font-family: Helvetica, Verdana, san-serif !important;
     color: #262626 !important;
     padding: 0px !important;
+}
+/* DELETE ME -- NOT FOUND
+div.vectorTabs li a {
+    font-size: inherit;
 }
 
 .vectorTabs li a {
@@ -128,80 +198,14 @@ of the flexbox on the main page of the wiki */
     margin-top: 0.5rem;
 }
 
-
-
-div.vectorTabs li a {
-    font-size: inherit;
-}
-
-
-div#mw-panel div.portal {
-    margin: 0;
-}
-
-div#mw-panel div.portal div.body ul li a {
-    color: #0060d7;
-}
-
-div#mw-panel div.portal h3 {
-    font-family: Helvetica, Verdana, san-serif;
-}
-
 .toctext {
     line-height: 1.125rem;
 }
+*/
 
-label {
-    font-size: 0.875em !important;
-    font-weight: normal;
-}
-
-#content label {
-    color: #252525;
-}
-
-select {
-    border-color: rgb(169, 169, 169);
-    border-width: 1px;
-    border-style: solid;
-    font-size: 1rem;
-    font-family: inherit;
-    height: 25px;
-    width: auto;
-    padding: 2px 6px 3px;
-    margin-top: 3px;
-    cursor: pointer;
-}
-
-input[type=number], input[type=email], input[type=url], input[type=search] {
-    height: 2.5em;
-    padding: 0.1em;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-input[type=tel], input[type=color], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=text] {
-    font: 13.3333px Arial;
-    font-size: .875em;
-    width: 100%;
-    border-image: initial;
-    color: #252525;
-    box-shadow: none;
-    padding: 1.185em;
-    height: 2.275em;
-    line-height: 1.275;
-    border: 1px solid #cccccc;
-    border-radius: 0;
-}
-
-[class^="mw-htmlform-field"] label {
-    color: inherit;
-    display: inline;
-    font-size: 100%;
-    font-weight: inherit;
-    line-height: inherit;
-    cursor: initial;
-}
+/******************************************************************************
+3. ID selectors (e.g., #example).
+******************************************************************************/
 
 #mainContent p {
     clear: none;
@@ -216,8 +220,16 @@ input[type=tel], input[type=color], input[type=password], input[type=datetime], 
     width: auto;
 }
 
-dd {
-    margin-bottom: 0.5em;
+div#mw-panel div.portal {
+    margin: 0;
+}
+
+div#mw-panel div.portal div.body ul li a {
+    color: #0060d7;
+}
+
+div#mw-panel div.portal h3 {
+    font-family: Helvetica, Verdana, san-serif;
 }
 
 #toc {
@@ -226,13 +238,27 @@ dd {
 
 #toc ul {
     margin-top: 0;
-}
-
-#toc ul {
     margin-left: 1em;
 }
 
-div.floatright, table.floatright {
+#menu-header-links-bottom.menu {
+    list-style: none;
+}
+
+#footer ul li {
+    padding-bottom: 0!important;
+}
+
+#pt-uls a.uls-trigger {
+    display: none;
+}
+
+#wikiEditor-ui-toolbar {
+    height: 32px;
+}
+
+div.floatright, 
+table.floatright {
     clear: right;
     float: right;
     position: relative;
@@ -240,7 +266,9 @@ div.floatright, table.floatright {
     border: 0;
 }
 
-div.floatleft, table.floatleft {
+/* e.g. https://beta.familysearch.org/wiki/en/User:Ahancey/Sandbox-tables2 */
+div.floatleft, 
+table.floatleft {
     float: left;
     clear: left;
     position: relative;
@@ -248,15 +276,18 @@ div.floatleft, table.floatleft {
     border: 0;
 }
 
-plainlinks a {
+/* e.g. https://beta.familysearch.org/wiki/en/GuidedResearch:Why_Can%27t_I_Find_the_Record_-_Lancashire_Births */
+.plainlinks a {
     background: none !important;
     padding: 0 !important;
 }
 
 /* prettytable class for skinning normal tables
- */
+e.g. https://beta.familysearch.org/wiki/en/FamilySearch_Indexing_Updates
+e.g. https://beta.familysearch.org/wiki/en/User:Batsondl/Sandbox_20
+Beware!! There is a 'template:prettytable' that is totally different */
 
-table.prettytable {
+.prettytable {
     margin: 1em 1em 1em 0;
     background: #f9f9f9;
     border: 1px #aaa solid;
@@ -284,7 +315,7 @@ table.prettytable {
    but should be included in the printed version */
 
 @media screen and (min-width:480px) {
-    .citation *.printonly {
+    .citation .printonly {
         display: none;
     }
 }
@@ -307,7 +338,8 @@ table.prettytable {
    @revision 5 (2014-02-24)
    @author [[User:Edokter]]
  */
-
+/* e.g.https://beta.familysearch.org/wiki/en/index.php?title=Template:Organization_infoboxes
+   e.g. https://beta.familysearch.org/wiki/en/Template:TOC_top */
 .hlist dl, .hlist ol, .hlist ul {
     margin: 0;
     padding: 0;
@@ -387,7 +419,9 @@ header>.global-pri-nav-container>h1 {
     border-bottom: 0;
 }
 
-div#mw-navigation #pt-logout, div#mw-navigation #pt-anonlogin, div#mw-navigation #p-logo {
+div#mw-navigation #pt-logout, 
+div#mw-navigation #pt-anonlogin, 
+div#mw-navigation #p-logo {
     display: none;
 }
 
@@ -422,3 +456,81 @@ footer#global-engage-footer {
     min-height: inherit;
     width: 100%;
 }
+
+@media all {
+	body #fs-footer {
+		background-color: transparent;
+		font-size: 1rem;
+		text-align: center;
+	}
+	@media screen and (min-width: 992px) {
+		body #fs-footer {
+			text-align: left;
+		}
+	}
+	body #fs-footer .footer-container {
+		position: relative;
+		display: block;
+		color: #7d7976;
+	}
+	body #fs-footer .footer-container a {
+		color: #333331 !important;
+	}
+	body #fs-footer .footer-container .copyright-notice .service-by-link a {
+		white-space: nowrap;
+	}
+	body #fs-footer .footer-container .copyright-notice, 
+	body #fs-footer .footer-container .copyright-notice * {
+		font-size: 0.75rem;
+	}
+
+	body #fs-footer .footer-container .footer-nav {
+		margin-bottom: 1.25rem;
+	}
+	body #fs-footer .footer-container .footer-nav .menu-footer-menu-container, 
+	body #fs-footer .footer-container .footer-nav .menu-footer-menu-container ul.menu, 
+	body #fs-footer .footer-container .footer-nav span.menu-item, 
+	body #fs-footer .footer-container .footer-nav #menu-footer-menu {
+		display: inline;
+	}
+	body #fs-footer .footer-container .footer-nav #menu-footer-menu {
+		padding: 0;
+	}
+	body #fs-footer .footer-container .footer-nav span.menu-item {
+		font-family: "Verdana", sans-serif;
+		color: #333331;
+	}
+	body #fs-footer .footer-container .footer-nav .menu-item {
+		display: inline-block;
+		margin-right: 2rem;
+		font-size: 0.75rem;
+	}
+	body #fs-footer .footer-container .footer-nav .menu-item a {
+		font-size: inherit;
+	}
+
+
+@media screen and (max-width: 991px) {
+	body #fs-footer {
+		padding: 1.5rem 0;
+		margin: 0 10%;
+	}
+	body #mw-mf-viewport {
+		height: auto;
+	}
+	body #fs-footer .footer-container span.church-logo-container {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	body #fs-footer .footer-container span.church-logo-container {
+		float: right;
+		position: relative;
+		bottom: 80px;
+	}
+	body #fs-footer {
+		margin-left: 11em;
+		padding: 0 1.25em 1.5em 1.25em;
+	}
+}}
