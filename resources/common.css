@@ -452,85 +452,86 @@ footer#global-engage-footer {
     display: block !important;
 }
 
-#wrapper.inj-wrapper {
+#wrapper .inj-wrapper {
     min-height: inherit;
     width: 100%;
 }
 
 @media all {
-	body #fs-footer {
+	#fs-footer {
 		background-color: transparent;
 		font-size: 1rem;
 		text-align: center;
 	}
 	@media screen and (min-width: 992px) {
-		body #fs-footer {
+		#fs-footer {
 			text-align: left;
 		}
 	}
-	body #fs-footer .footer-container {
+	#fs-footer .footer-container {
 		position: relative;
 		display: block;
 		color: #7d7976;
 	}
-	body #fs-footer .footer-container a {
+	#fs-footer .footer-container a {
 		color: #333331 !important;
 	}
-	body #fs-footer .footer-container .copyright-notice .service-by-link a {
+	#fs-footer .footer-container .copyright-notice .service-by-link a {
 		white-space: nowrap;
 	}
-	body #fs-footer .footer-container .copyright-notice, 
-	body #fs-footer .footer-container .copyright-notice * {
+	#fs-footer .footer-container .copyright-notice, 
+	#fs-footer .footer-container .copyright-notice * {
 		font-size: 0.75rem;
 	}
 
-	body #fs-footer .footer-container .footer-nav {
+	#fs-footer .footer-container .footer-nav {
 		margin-bottom: 1.25rem;
 	}
-	body #fs-footer .footer-container .footer-nav .menu-footer-menu-container, 
-	body #fs-footer .footer-container .footer-nav .menu-footer-menu-container ul.menu, 
-	body #fs-footer .footer-container .footer-nav span.menu-item, 
-	body #fs-footer .footer-container .footer-nav #menu-footer-menu {
+	#fs-footer .footer-container .footer-nav .menu-footer-menu-container, 
+	#fs-footer .footer-container .footer-nav .menu-footer-menu-container ul.menu, 
+	#fs-footer .footer-container .footer-nav span.menu-item, 
+	#fs-footer .footer-container .footer-nav #menu-footer-menu {
 		display: inline;
 	}
-	body #fs-footer .footer-container .footer-nav #menu-footer-menu {
+	#fs-footer .footer-container .footer-nav #menu-footer-menu {
 		padding: 0;
 	}
-	body #fs-footer .footer-container .footer-nav span.menu-item {
+	#fs-footer .footer-container .footer-nav span.menu-item {
 		font-family: "Verdana", sans-serif;
 		color: #333331;
 	}
-	body #fs-footer .footer-container .footer-nav .menu-item {
+	#fs-footer .footer-container .footer-nav .menu-item {
 		display: inline-block;
 		margin-right: 2rem;
 		font-size: 0.75rem;
 	}
-	body #fs-footer .footer-container .footer-nav .menu-item a {
+	#fs-footer .footer-container .footer-nav .menu-item a {
 		font-size: inherit;
 	}
+}
 
 
 @media screen and (max-width: 991px) {
-	body #fs-footer {
+	#fs-footer {
 		padding: 1.5rem 0;
 		margin: 0 10%;
 	}
 	body #mw-mf-viewport {
 		height: auto;
 	}
-	body #fs-footer .footer-container span.church-logo-container {
+	#fs-footer .footer-container span.church-logo-container {
 		text-align: center;
 	}
 }
 
 @media screen and (min-width: 992px) {
-	body #fs-footer .footer-container span.church-logo-container {
+	#fs-footer .footer-container span.church-logo-container {
 		float: right;
 		position: relative;
 		bottom: 80px;
 	}
-	body #fs-footer {
+	#fs-footer {
 		margin-left: 11em;
 		padding: 0 1.25em 1.5em 1.25em;
 	}
-}}
+}
