@@ -20,37 +20,10 @@ dd {
     margin-bottom: 0.5em;
 }
 
-input[type=number], 
-input[type=email], 
-input[type=url], 
-input[type=search] {
-    height: 2.5em;
-    padding: 0.1em;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-input[type=tel], 
-input[type=color], 
-input[type=password], 
-input[type=datetime], 
-input[type=datetime-local], 
-input[type=date], 
-input[type=month], 
-input[type=time], 
-input[type=week], 
-input[type=text] {
-    font: 13.3333px Arial;
-    font-size: .875em;
-    width: 100%;
-    border-image: initial;
-    color: #252525;
-    box-shadow: none;
-    padding: 1.185em;
-    height: 2.275em;
-    line-height: 1.275;
-    border: 1px solid #cccccc;
-    border-radius: 0;
+header > .global-pri-nav-container > h1 {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
 }
 
 label {
@@ -203,60 +176,6 @@ div.vectorTabs li a {
 }
 */
 
-/******************************************************************************
-3. ID selectors (e.g., #example).
-******************************************************************************/
-
-#mainContent p {
-    clear: none;
-}
-
-#contentSub {
-    display: block;
-    font-size: 84%;
-    line-height: 1.2em;
-    margin: 0 0 1.4em 1em;
-    color: #7D7D7D;
-    width: auto;
-}
-
-div#mw-panel div.portal {
-    margin: 0;
-}
-
-div#mw-panel div.portal div.body ul li a {
-    color: #0060d7;
-}
-
-div#mw-panel div.portal h3 {
-    font-family: Helvetica, Verdana, san-serif;
-}
-
-#toc {
-    width: auto;
-}
-
-#toc ul {
-    margin-top: 0;
-    margin-left: 1em;
-}
-
-#menu-header-links-bottom.menu {
-    list-style: none;
-}
-
-#footer ul li {
-    padding-bottom: 0!important;
-}
-
-#pt-uls a.uls-trigger {
-    display: none;
-}
-
-#wikiEditor-ui-toolbar {
-    height: 32px;
-}
-
 div.floatright, 
 table.floatright {
     clear: right;
@@ -338,18 +257,31 @@ Beware!! There is a 'template:prettytable' that is totally different */
    @revision 5 (2014-02-24)
    @author [[User:Edokter]]
  */
-/* e.g.https://beta.familysearch.org/wiki/en/index.php?title=Template:Organization_infoboxes
+/* HLIST IS PART OF MINERVA AND SO THIS MAY NOT BE NEEDED
+   e.g.https://beta.familysearch.org/wiki/en/index.php?title=Template:Organization_infoboxes
    e.g. https://beta.familysearch.org/wiki/en/Template:TOC_top */
-.hlist dl, .hlist ol, .hlist ul {
+.hlist dl, 
+.hlist ol, 
+.hlist ul {
     margin: 0;
     padding: 0;
 }
 
-.hlist dd, .hlist dt, .hlist li {
+.hlist dd, 
+.hlist dt, 
+.hlist li {
     display: inline;
 }
 
-.hlist dl dl, .hlist dl ol, .hlist dl ul, .hlist ol dl, .hlist ol ol, .hlist ol ul, .hlist ul dl, .hlist ul ol, .hlist ul ul {
+.hlist dl dl, 
+.hlist dl ol, 
+.hlist dl ul, 
+.hlist ol dl, 
+.hlist ol ol, 
+.hlist ol ul, 
+.hlist ul dl, 
+.hlist ul ol, 
+.hlist ul ul {
     display: inline;
 }
 
@@ -357,30 +289,59 @@ Beware!! There is a 'template:prettytable' that is totally different */
     content: ": ";
 }
 
-.hlist dd:after, .hlist li:after {
+.hlist dd:after, 
+.hlist li:after {
     content: " . ";
     font-weight: bold;
 }
 
-.hlist dd:last-child:after, .hlist dt:last-child:after, .hlist li:last-child:after {
+.hlist dd:last-child:after, 
+.hlist dt:last-child:after, 
+.hlist li:last-child:after {
     content: none;
 }
 
-.hlist dd.hlist-last-child:after, .hlist dt.hlist-last-child:after, .hlist li.hlist-last-child:after {
+.hlist dd.hlist-last-child:after, 
+.hlist dt.hlist-last-child:after, 
+.hlist li.hlist-last-child:after {
     content: none;
 }
 
-.hlist dd dd:first-child:before, .hlist dd dt:first-child:before, .hlist dd li:first-child:before, .hlist dt dd:first-child:before, .hlist dt dt:first-child:before, .hlist dt li:first-child:before, .hlist li dd:first-child:before, .hlist li dt:first-child:before, .hlist li li:first-child:before {
+.hlist dd dd:first-child:before, 
+.hlist dd dt:first-child:before, 
+.hlist dd li:first-child:before, 
+.hlist dt dd:first-child:before, 
+.hlist dt dt:first-child:before, 
+.hlist dt li:first-child:before, 
+.hlist li dd:first-child:before, 
+.hlist li dt:first-child:before, 
+.hlist li li:first-child:before {
     content: " (";
     font-weight: normal;
 }
 
-.hlist dd dd:last-child:after, .hlist dd dt:last-child:after, .hlist dd li:last-child:after, .hlist dt dd:last-child:after, .hlist dt dt:last-child:after, .hlist dt li:last-child:after, .hlist li dd:last-child:after, .hlist li dt:last-child:after, .hlist li li:last-child:after {
+.hlist dd dd:last-child:after, 
+.hlist dd dt:last-child:after, 
+.hlist dd li:last-child:after, 
+.hlist dt dd:last-child:after, 
+.hlist dt dt:last-child:after, 
+.hlist dt li:last-child:after, 
+.hlist li dd:last-child:after, 
+.hlist li dt:last-child:after, 
+.hlist li li:last-child:after {
     content: ") ";
     font-weight: normal;
 }
 
-.hlist dd dd.hlist-last-child:after, .hlist dd dt.hlist-last-child:after, .hlist dd li.hlist-last-child:after, .hlist dt dd.hlist-last-child:after, .hlist dt dt.hlist-last-child:after, .hlist dt li.hlist-last-child:after, .hlist li dd.hlist-last-child:after, .hlist li dt.hlist-last-child:after, .hlist li li.hlist-last-child:after {
+.hlist dd dd.hlist-last-child:after, 
+.hlist dd dt.hlist-last-child:after, 
+.hlist dd li.hlist-last-child:after, 
+.hlist dt dd.hlist-last-child:after, 
+.hlist dt dt.hlist-last-child:after, 
+.hlist dt li.hlist-last-child:after, 
+.hlist li dd.hlist-last-child:after, 
+.hlist li dt.hlist-last-child:after, 
+.hlist li li.hlist-last-child:after {
     content: ") ";
     font-weight: normal;
 }
@@ -398,7 +359,9 @@ Beware!! There is a 'template:prettytable' that is totally different */
     white-space: nowrap;
 }
 
-.hlist dd ol>li:first-child:before, .hlist dt ol>li:first-child:before, .hlist li ol>li:first-child:before {
+.hlist dd ol>li:first-child:before, 
+.hlist dt ol>li:first-child:before,
+.hlist li ol>li:first-child:before {
     content: " (" counter(listitem) " ";
 }
 
@@ -412,12 +375,89 @@ Beware!! There is a 'template:prettytable' that is totally different */
     margin-bottom: 0;
 }
 
-
-header>.global-pri-nav-container>h1 {
-    padding-top: 0;
-    padding-bottom: 0;
-    border-bottom: 0;
+input[type=number], 
+input[type=email], 
+input[type=url], 
+input[type=search] {
+    height: 2.5em;
+    padding: 0.1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
+
+input[type=tel], 
+input[type=color], 
+input[type=password], 
+input[type=datetime], 
+input[type=datetime-local], 
+input[type=date], 
+input[type=month], 
+input[type=time], 
+input[type=week], 
+input[type=text] {
+    font: 13.3333px Arial;
+    font-size: .875em;
+    width: 100%;
+    border-image: initial;
+    color: #252525;
+    box-shadow: none;
+    padding: 1.185em;
+    height: 2.275em;
+    line-height: 1.275;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+}
+
+/******************************************************************************
+3. ID selectors (e.g., #example).
+******************************************************************************/
+
+#mainContent p {
+    clear: none;
+}
+
+#contentSub {
+    display: block;
+    font-size: 84%;
+    line-height: 1.2em;
+    margin: 0 0 1.4em 1em;
+    color: #7D7D7D;
+    width: auto;
+}
+
+div#mw-panel div.portal {
+    margin: 0;
+}
+
+div#mw-panel div.portal div.body ul li a {
+    color: #0060d7;
+}
+
+div#mw-panel div.portal h3 {
+    font-family: Helvetica, Verdana, san-serif;
+}
+
+#toc {
+    width: auto;
+}
+
+#toc ul {
+    margin-top: 0;
+    margin-left: 1em;
+}
+
+#menu-header-links-bottom.menu {
+    list-style: none;
+}
+
+#pt-uls a.uls-trigger {
+    display: none;
+}
+
+#wikiEditor-ui-toolbar {
+    height: 32px;
+}
+
 
 div#mw-navigation #pt-logout, 
 div#mw-navigation #pt-anonlogin, 
@@ -444,10 +484,6 @@ div#mw-navigation #p-logo {
     z-index: 1;
 }
 
-footer#global-engage-footer {
-    background: #f6f6f6;
-}
-
 .templeMember #global-engage-header ul.main-nav li.nav-temple-link .templeInfoChecked .nav-item.temple {
     display: block !important;
 }
@@ -456,7 +492,16 @@ footer#global-engage-footer {
     min-height: inherit;
     width: 100%;
 }
-
+/* REMOVE = UNUSED
+footer #global-engage-footer {
+    background: #f6f6f6;
+}
+*/
+/* REMOVE = Unneccessary; Minerva already does this
+#footer ul li {
+    padding-bottom: 0!important;
+}
+*/
 @media all {
 	#fs-footer {
 		background-color: transparent;
