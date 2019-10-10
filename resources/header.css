@@ -16,9 +16,28 @@
 	src: url('/wiki/public_html/Museo_Slab_500.otf') format("opentype");
 }
 
+/**
+ * DELETE ME = Where is FontAwesome used?  Can't find it anywhere
+ */
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot#iefix&v=4.6.3') 
+	format('embedded-opentype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3') 
+	format('woff2'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff?v=4.6.3') 
+	format('woff'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf?v=4.6.3') 
+	format('truetype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') 
+	format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/**
+ * These rules about font-family need to be reviewed.
+ * If body is 'sans-serif' while headings are 'serif', why are they both Helvetica?
+ */
 html, 
 body {
-	font-family: Helvetica, Verdana, san-serif;
+	font-family: Helvetica, Verdana, sans-serif;
 }
 
 /* The page title (h1) and any h2 */
@@ -35,6 +54,9 @@ h3, h4, h5, h6 {
 
 
 
+/******************************************************************************
+1. Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).
+******************************************************************************/
 
 
 body {
@@ -60,9 +82,11 @@ h3, h4, h5, h6 {
 	color: #252525;
 }
 
+/** DELETE = Causes 76px gap
 .mw-body {
 	margin-top: 76px;
 }
+*/
 
 /* these compete with the above H1-6 */
 .mw-body h1 {
@@ -264,7 +288,10 @@ header#main-header * {
 		display: table;
 		clear: both;
 	}
-	#top-menu>.icon-tree>a:before {
+/******************************************************************************
+ Navigation
+******************************************************************************/
+	#top-menu > .icon-tree > a:before {
 		display: block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -275,12 +302,8 @@ header#main-header * {
 		content: '';
 		background-image: url("/wiki/public_html/img/tree.svg");
 	}
-	@media screen and (min-width: 992px) {
-		#top-menu>.icon-tree>a:before {
-			display: none;
-		}
-	}
-	#top-menu>.icon-search>a:before {
+
+	#top-menu > .icon-search > a:before {
 		display: block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -291,12 +314,8 @@ header#main-header * {
 		content: '';
 		background-image: url("/wiki/public_html/img/search.svg");
 	}
-	@media screen and (min-width: 992px) {
-		#top-menu>.icon-search>a:before {
-			display: none;
-		}
-	}
-	#top-menu>.icon-memories>a:before {
+
+	#top-menu > .icon-memories > a:before {
 		display: block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -307,12 +326,8 @@ header#main-header * {
 		content: '';
 		background-image: url("/wiki/public_html/img/memories.svg");
 	}
-	@media screen and (min-width: 992px) {
-		#top-menu>.icon-memories>a:before {
-			display: none;
-		}
-	}
-	#top-menu>.icon-indexing>a:before {
+
+	#top-menu > .icon-indexing > a:before {
 		display: block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -323,12 +338,8 @@ header#main-header * {
 		content: '';
 		background-image: url("/wiki/public_html/img/indexing.svg");
 	}
-	@media screen and (min-width: 992px) {
-		#top-menu>.icon-indexing>a:before {
-			display: none;
-		}
-	}
-	#top-menu>.icon-temple>a:before {
+
+	#top-menu > .icon-temple > a:before {
 		display: block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -339,11 +350,20 @@ header#main-header * {
 		content: '';
 		background-image: url("/wiki/public_html/img/temple.svg");
 	}
-	@media screen and (min-width: 992px) {
-		#top-menu>.icon-temple>a:before {
+
+	/**
+	 * Hide the menu graphics on large displays
+	 */
+	 @media screen and (min-width: 992px) {
+		#top-menu > .icon-tree > a:before,
+		#top-menu > .icon-search > a:before,
+		#top-menu > .icon-memories > a:before,
+		#top-menu > .icon-indexing > a:before,
+		#top-menu > .icon-temple > a:before {
 			display: none;
 		}
 	}
+
 	@media screen and (min-width: 768px) {
 		body #main-header {
 			height: 73px!important;
@@ -402,7 +422,8 @@ header#main-header * {
 		visibility: visible;
 		border: none;
 	}
-	.mobile_nav ul#top-menu .sub-menu::before, .mobile_nav ul#top-menu .sub-menu::after {
+	.mobile_nav ul#top-menu .sub-menu::before,
+ .mobile_nav ul#top-menu .sub-menu::after {
 		display: none;
 		content: '';
 	}
@@ -1014,14 +1035,6 @@ header#main-header * {
 	}
 }
 
-@font-face {
-	font-family: 'FontAwesome';
-	src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?v=4.6.3');
-	src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot#iefix&v=4.6.3') format('embedded-opentype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
 html .mobile-menu-open body {
 	max-height: 100%;
 	overflow: hidden;
@@ -1114,7 +1127,9 @@ html .mobile-menu-open body {
 			font-family: Verdana, Ayuthaya, "HanaMinBFont", sans-serif;
 			line-height: 25px;
 		}
-		.mobile_nav #top-menu li.menu-item.menu-item-has-children>a:hover, .mobile_nav #top-menu li.menu-item.menu-item-has-children>a:active, .mobile_nav #top-menu li.menu-item.menu-item-has-children>a:focus {
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children>a:hover,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children>a:active,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children>a:focus {
 			text-decoration: none;
 			background-color: #555555!important;
 		}
@@ -1129,11 +1144,23 @@ html .mobile-menu-open body {
 			border-top: 11px solid #4d4d4a;
 			margin-top: 0;
 		}
-		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-tree>a, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-search>a, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-memories>a, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-indexing>a, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-temple>a, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-help>a {
+		/** 
+		 * DELETE ME = repeated rules 
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-tree>a,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-search>a,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-memories>a,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-indexing>a,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-temple>a,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-help>a {
 			line-height: 25px;
 			position: relative;
 		}
-		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-tree>a::before, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-search>a::before, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-memories>a::before, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-indexing>a::before, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-temple>a::before, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-help>a::before {
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-tree>a::before,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-search>a::before,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-memories>a::before,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-indexing>a::before,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-temple>a::before,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-help>a::before {
 			display: block;
 			content: '';
 			background-repeat: no-repeat!important;
@@ -1144,7 +1171,12 @@ html .mobile-menu-open body {
 			position: absolute;
 			left: 43px;
 		}
-		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-tree>a::after, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-search>a::after, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-memories>a::after, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-indexing>a::after, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-temple>a::after, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-help>a::after {
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-tree>a::after,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-search>a::after,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-memories>a::after,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-indexing>a::after,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-temple>a::after,
+		.mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-help>a::after {
 			display: block;
 			content: '';
 			background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3Csvg%20version%3D%221.2%22%20baseProfile%3D%22tiny%22%20id%3D%22Art%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%0A%09%20x%3D%220px%22%20y%3D%220px%22%20width%3D%227px%22%20height%3D%2211px%22%20viewBox%3D%220%200%207%2011%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M0.5%2C10.9c-0.189%2C0-0.4-0.37-0.4-0.9V1c0-0.53%2C0.211-0.9%2C0.4-0.9c0.223%2C0%2C0.745%2C0.261%2C1.169%2C0.65%0A%09l4.517%2C4.147C6.361%2C5.058%2C6.458%2C5.272%2C6.458%2C5.5S6.361%2C5.942%2C6.186%2C6.103L1.669%2C10.25C1.246%2C10.639%2C0.723%2C10.9%2C0.5%2C10.9z%22/%3E%0A%3Crect%20y%3D%220%22%20fill%3D%22none%22%20width%3D%227%22%20height%3D%2211%22/%3E%0A%3C/svg%3E%0A")!important;
@@ -1171,6 +1203,8 @@ html .mobile-menu-open body {
 		.mobile_nav #top-menu li.menu-item.icon-help>a::before {
 			background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2214%22%20height%3D%2213%22%20viewBox%3D%220%200%2014%2013%22%3E%3Ctitle%3Ehelp-white-xs%3C/title%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Art%22%3E%3Cpath%20d%3D%22M12.08%2C12.91a5.35%2C5.35%2C0%2C0%2C1-2.1-.84%2C6.75%2C6.75%2C0%2C0%2C0-3.47-1.15C3.06%2C10.92.25%2C8.5.25%2C5.51S3.06.1%2C6.51.1s6.26%2C2.43%2C6.26%2C5.41a6.23%2C6.23%2C0%2C0%2C1-1.28%2C3.4C10.71%2C10.06%2C11.53%2C12.09%2C12.08%2C12.91ZM6.52%2C7.52A.78.78%2C0%2C0%2C0%2C6%2C7.74a.72.72%2C0%2C0%2C0-.23.54A.7.7%2C0%2C0%2C0%2C6%2C8.85a.83.83%2C0%2C0%2C0%2C.55.2.8.8%2C0%2C0%2C0%2C.54-.2.71.71%2C0%2C0%2C0%2C.24-.56.73.73%2C0%2C0%2C0-.22-.54A.77.77%2C0%2C0%2C0%2C6.52%2C7.52Zm.12-4.69a1%2C1%2C0%2C0%2C1%2C.71.24.75.75%2C0%2C0%2C1%2C.27.59A.64.64%2C0%2C0%2C1%2C7.53%2C4a1.26%2C1.26%2C0%2C0%2C1-.22.29l-.46.41a7.51%2C7.51%2C0%2C0%2C0-.59.55%2C1.93%2C1.93%2C0%2C0%2C0-.37.55%2C1.91%2C1.91%2C0%2C0%2C0-.14.75A.73.73%2C0%2C0%2C0%2C6%2C7.11a.72.72%2C0%2C0%2C0%2C.51.19.65.65%2C0%2C0%2C0%2C.7-.59c0-.15.06-.26.08-.32a.86.86%2C0%2C0%2C1%2C.07-.17A.91.91%2C0%2C0%2C1%2C7.45%2C6l.27-.26q.62-.54.86-.77A2.38%2C2.38%2C0%2C0%2C0%2C9%2C4.44a1.58%2C1.58%2C0%2C0%2C0%2C.19-.78%2C1.82%2C1.82%2C0%2C0%2C0-.32-1A2.2%2C2.2%2C0%2C0%2C0%2C8%2C1.88a3.11%2C3.11%2C0%2C0%2C0-1.33-.27%2C3%2C3%2C0%2C0%2C0-1.42.33%2C2.46%2C2.46%2C0%2C0%2C0-.93.82%2C1.84%2C1.84%2C0%2C0%2C0-.32%2C1%2C.68.68%2C0%2C0%2C0%2C.22.49.75.75%2C0%2C0%2C0%2C.55.22.76.76%2C0%2C0%2C0%2C.75-.62%2C2%2C2%2C0%2C0%2C1%2C.42-.76A1%2C1%2C0%2C0%2C1%2C6.64%2C2.84Z%22%20style%3D%22fill%3A%23fff%22/%3E%3Crect%20width%3D%2214%22%20height%3D%2213%22%20style%3D%22fill%3Anone%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 		}
+		*/
+
 		.mobile_nav #top-menu .sub-menu {
 			position: relative!important;
 			opacity: 0;
@@ -1181,7 +1215,8 @@ html .mobile-menu-open body {
 			overflow: hidden;
 			transition: max-height 0.4s ease-in-out;
 		}
-		.mobile_nav #top-menu .sub-menu::before, .mobile_nav #top-menu .sub-menu::after {
+		.mobile_nav #top-menu .sub-menu::before,
+		.mobile_nav #top-menu .sub-menu::after {
 			display: none;
 			content: '';
 		}
