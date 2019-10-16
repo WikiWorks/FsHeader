@@ -19,6 +19,13 @@
 /******************************************************************************
 1. Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).
 ******************************************************************************/
+/* change the box around the code feature */
+code {
+    color: #000;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
 dd {
     margin-bottom: 0.5em;
 }
@@ -206,8 +213,15 @@ table.floatleft {
 
 /* prettytable class for skinning normal tables
 e.g. https://beta.familysearch.org/wiki/en/FamilySearch_Indexing_Updates
+e.g. https://beta.familysearch.org/wiki/en/FamilySearch_Wiki:New_Contributors_Training
 e.g. https://beta.familysearch.org/wiki/en/User:Batsondl/Sandbox_20
-Beware!! There is a 'template:prettytable' that is totally different */
+Beware!! There is a 'template:prettytable' that is totally different:
+Should eliminate the template and replace it with built-in class wikitable 
+These and variants can be found in our wiki
+{| class="prettytable" |
+{| class="wikitable sortable" {{prettytable}} 
+{| {{prettytable}} |
+*/
 
 .prettytable {
     margin: 1em 1em 1em 0;
@@ -583,3 +597,104 @@ footer #global-engage-footer {
 		padding: 0 1.25em 1.5em 1.25em;
 	}
 }
+
+
+
+/******************************************************************************
+4. MediaWiki:Common.css
+******************************************************************************/
+/**
+ * DELETE ME = not found
+.button-style {
+    background-color: #7897BA;
+    border:4px outset #B3D2F5;
+    border-radius:.5rem;
+    color: white !important;
+    padding: .2rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight:bold;
+    font-family:Arial;
+    position:absolute;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.button-style > a,
+.button-style > a.visited, 
+.button-style > a.external:visited , 
+.button-style > a:hover {
+    color:white !important;
+    text-decoration:none !important;
+}
+*/
+
+
+/* make sure missing pages remain colored correctly after visiting */
+a.new:visited, 
+#p-personal a.new:visited {
+    color: #a55858 !important;
+}
+
+/* change border on input forms to be 1pm, instead of 2px, and grey instead of black */
+form input {
+/*    border: 1px solid !important;*/
+    border-color: darkgrey !important;
+}
+
+/* example? */
+#newHeading {
+    margin-top:0;
+}
+
+/** Define spacing and # of columns based on screen size 
+ * e.g. https://beta.familysearch.org/wiki/en/England_Genealogy
+ */
+
+@media screen and (min-width: 1400px) {
+.column-spacing-fullscreen{
+    column-count: 6;
+    padding-right: 9% !important;
+}}	
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+.column-spacing-fullscreen{
+    column-count: 5;
+}}
+@media screen and (min-width: 900px) and (max-width:1199px) {
+.column-spacing-fullscreen{
+    column-count: 4;
+}}
+@media screen and (min-width: 600px) and (max-width:899px) {
+.column-spacing-fullscreen{
+    column-count: 3;
+}}
+@media screen and (max-width:745px) {
+.column-spacing-fullscreen{
+    column-count: 2;
+}}
+@media screen and (max-width:500px) {
+.column-spacing-fullscreen{
+    column-count: 1;
+}}
+
+/** Define spacing and # of columns based on screen size - however, 
+ * this section assumes that only half the screen is available for 
+ * the columns.  Even though the screen size may be 1400px, the 
+ * available space for the columns is half that, or 700px. 
+ * e.g. https://beta.familysearch.org/wiki/en/Asia
+ * e.g. https://beta.familysearch.org/wiki/en/North_America
+ */
+
+@media screen and (min-width: 1400px) {
+.column-spacing-halfscreen{
+    column-count: 3;
+}}	
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+.column-spacing-halfscreen{
+    column-count: 2;
+}}
+@media screen and (min-width: 900px) and (max-width:1199px) {
+.column-spacing-halfscreen{
+    column-count: 1;
+}}
+.column-spacing-halfscreen li, .column-spacing-fullscreen li {padding-right:5px;}
