@@ -18,7 +18,7 @@
 
 /**
  * DELETE ME = Where is FontAwesome used?  Can't find it anywhere
- */
+ 
 @font-face {
 	font-family: 'FontAwesome';
 	src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot#iefix&v=4.6.3') 
@@ -30,6 +30,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
+*/
 
 /**
  * These rules about font-family need to be reviewed.
@@ -40,19 +41,24 @@ body {
 	font-family: Helvetica, Verdana, sans-serif;
 }
 
+/* Where is Proxima Nova font? */
+h3, h4, h5, h6 {
+	font-family: Helvetica, "Proxima Nova Light", serif;
+}
+
 /* The page title (h1) and any h2 */
 #firstHeading,
 #content h2 {
 	font-family: Museo, Helvetica, Verdana, serif;
 }
 
-/* Where is Proxima Nova font? */
-h3, h4, h5, h6 {
-	font-family: Helvetica, "Proxima Nova Light", serif;
+header#main-header * {
+	font-family: Verdana!important;
 }
 
-
-
+pre, code, tt, kbd, samp, .mw-code {
+    font-family: monospace,Courier;
+}
 
 /******************************************************************************
 1. Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).
@@ -128,6 +134,7 @@ h3, h4, h5, h6 {
 	font-weight: normal !important;
 	font-style: italic;
 }
+
 /* */
 .mw-body p, .mw-body-content p, p {
 	line-height: 1.5em;
@@ -136,17 +143,9 @@ h3, h4, h5, h6 {
 	color: #262626;
 }
 
-.mw-body ul li, .mw-body-content ul li {
-	line-height: 1.5em;
-	font-family: Helvetica, Verdana, "Proxima Nova Light", serif;
-	font-size: inherit;
-	color: #262626;
-}
-
-.mw-body-content #mw-content-text .mw-parser-output ul li {
-	list-style-type: disc;
-}
-
+/*****************************************************************************
+Lists
+******************************************************************************/
 ul li {
 	line-height: 1.25rem;
 	font-family: Helvetica, "Proxima Nova Light", serif;
@@ -158,13 +157,16 @@ ol li {
 	line-height: 1.25rem;
 }
 
-header#main-header * {
-	font-family: Verdana!important;
+.mw-body ul li, .mw-body-content ul li {
+	line-height: 1.5em;
+	font-family: Helvetica, Verdana, "Proxima Nova Light", serif;
+	font-size: inherit;
+	color: #262626;
 }
 
-#top-menu, body {
-	right: 0;
-	transition: all 0.25s ease-in-out !important;
+/** DELETE ME = list-style-type defaults to disc */
+.mw-body-content #mw-content-text .mw-parser-output ul li {
+	list-style-type: disc;
 }
 
 @media all {
@@ -174,17 +176,7 @@ header#main-header * {
 	.overlay-enabled #mw-mf-page-center {
 		position: relative;
 	}
-	#simpleSearch #searchInput {
-		padding: 0.2em 0 0.5em 0.2em!important;
-	}
-	/* when in mobile view, stop skin Minerva from defining a small grey line above
-	the header list items.*/
-	nav ul li {
-		border-top: unset !important;
-	}
-	ul {
-		list-style: none!important;
-	}
+
 	#content a:visited, #content a.external:visited {
 		color: #0b0080;
 	}
@@ -256,6 +248,16 @@ header#main-header * {
 	#mw-head .vectorMenu h3 {
 		background-image: unset!important;
 	}
+
+/*****************************************************************************
+Forms
+******************************************************************************/
+/** We use the inputbox extension to create forms.
+ * Can be found on pages such as
+ * e.g. https://beta.familysearch.org/wiki/en/Template:Searchbox
+ * e.g. https://beta.familysearch.org/wiki/en/Help:Creating_a_Page
+ * e.g. https://beta.familysearch.org/wiki/en/Help:How_to_Create_an_Article
+ */
 	form input {
 		border-radius: 4px;
 		background-color: #fff;
@@ -263,10 +265,14 @@ header#main-header * {
 		height: auto;
 		line-height: normal;
 	}
-	input[type=search], input[type=text], input[type=submit] {
+
+	input[type=search], 
+	input[type=text], 
+	input[type=submit] {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 	}
+
 	input[type="text"]:not(.et_pb_s) {
 		background-color: #fff!important;
 		border: 1px solid #c8c8c8!important;
@@ -274,23 +280,35 @@ header#main-header * {
 		-moz-box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.05)!important;
 		box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.05)!important;
 	}
+
 	input[type="text"]:not(.et_pb_s):focus, input[type="text"]:not(.et_pb_s):active {
 		border-color: #333331!important;
 	}
-	@media screen and (max-width: 991px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-		#top-menu {
-			justify-content: space-between;
-			padding: 0 5%;
-		}
+	
+	/* Set width of search box to 70%, so 'go' button stays inline. */
+	/* To correct the ID name to 'search-box', edit the Searchbox template then this file */
+	#bodySearchInputHomePageSearchBox {
+    	width: 70%;
 	}
+
+
+    /* example? */
 	.clearfix:after {
 		content: "";
 		display: table;
 		clear: both;
 	}
+
+
 /******************************************************************************
  Navigation
 ******************************************************************************/
+	#top-menu, 
+	body {
+		right: 0;
+		transition: all 0.25s ease-in-out !important;
+	}
+
 	#top-menu > .icon-tree > a:before {
 		display: block;
 		background-size: contain;
@@ -369,28 +387,41 @@ header#main-header * {
 			height: 73px!important;
 		}
 	}
+
 	@media screen and (min-width: 992px) {
 		body #main-header {
 			height: 77px!important;
 		}
 	}
+
 	ul#top-menu {
 		max-height: 56px!important;
 	}
+
+	@media screen and (max-width: 991px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		#top-menu {
+			justify-content: space-between;
+			padding: 0 5%;
+		}
+	}
+
 	.mobile_nav span.mobile_menu_bar_toggle {
 		line-height: 16px;
 		padding: 5px 9px;
 		font-size: 14px;
 	}
+
 	@media screen and (min-width: 992px) {
 		.mobile_nav span.mobile_menu_bar_toggle {
 			font-size: 16px;
 		}
 	}
+
 	.mobile_nav span.mobile_menu_bar_toggle::before {
 		height: 28px!important;
 		line-height: 28px!important;
 	}
+
 	.mobile_nav ul#top-menu {
 		max-height: unset!important;
 		width: 100%;
@@ -402,9 +433,11 @@ header#main-header * {
 		box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.35);
 		border: 1px solid #cdcdcd;
 	}
+
 	.mobile_nav ul#top-menu>li>a {
 		color: inherit;
 	}
+
 	@media screen and (max-width: 991px) {
 		.mobile_nav ul#top-menu>li>a {
 			display: inline-flex;
@@ -1262,5 +1295,17 @@ html .mobile-menu-open body {
 	}
 	#mw-panel .portal .body {
 		margin-left: 1.25em;
+	}
+
+	#simpleSearch #searchInput {
+		padding: 0.2em 0 0.5em 0.2em!important;
+	}
+	/* when in mobile view, stop skin Minerva from defining a small grey line above
+	the header list items.*/
+	nav ul li {
+		border-top: unset !important;
+	}
+	ul {
+		list-style: none!important;
 	}
 }
