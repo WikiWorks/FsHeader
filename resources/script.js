@@ -33,7 +33,7 @@ $(document).ready(function(e) {
 
 
 
-	var mobile_menus = $(".mobile_nav .menu-item-has-children .sub-menu").hide();
+	var mobile_menus = $(".mobile-nav .menu-item-has-children .sub-menu").hide();
 
 	//on page resize re-calculate the left padding on the nav menu
 	jQuery(window).on("load resize", function () {
@@ -44,7 +44,7 @@ $(document).ready(function(e) {
 		jQuery("#et-top-navigation").css("padding-left", logo_width + "px !important");
 	});
 
-	jQuery(".mobile_nav").on("click", "#top-menu > .menu-item-has-children > a", function(e) {
+	jQuery(".mobile-nav").on("click", "#top-menu > .menu-item-has-children > a", function(e) {
 
 		e.stopPropagation();
 		e.preventDefault();
@@ -62,11 +62,11 @@ $(document).ready(function(e) {
 		}
 	});
 
-	jQuery(".mobile_menu_bar_toggle").on("click", function (e) {
+	jQuery(".mobile-menu-bar-toggle").on("click", function (e) {
 		e.stopPropagation();
 		e.preventDefault();
-		jQuery(".mobile_nav").toggleClass("closed");
-		jQuery(".mobile_nav").toggleClass("opened");
+		jQuery(".mobile-nav").toggleClass("closed");
+		jQuery(".mobile-nav").toggleClass("opened");
 		console.log("mobile-menu-open");
 		jQuery("html").toggleClass("mobile-menu-open");
 	});

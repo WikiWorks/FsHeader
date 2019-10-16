@@ -209,8 +209,8 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
 
 			<!-- Mobile view menu, under the MORE Hamburger menu.-->
             <div id="et-mobile-nav-menu">
-               <div class="mobile_nav closed">
-                  <span class="mobile_menu_bar mobile_menu_bar_toggle"><?php $t ('header-more');?></span>
+               <div class="mobile-nav closed">
+                  <span class="mobile-menu-bar mobile-menu-bar-toggle"><?php $t ('header-more');?></span>
 
                   <ul id="top-menu" class="nav">
 					<?php if ( $wgUser->mId == 0 ) { ?>
