@@ -208,7 +208,7 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
             </div>  <!-- end #header-right-section -->
 
 			<!-- Mobile view menu, under the MORE Hamburger menu.-->
-            <div id="et_mobile_nav_menu">
+            <div id="et-mobile-nav-menu">
                <div class="mobile_nav closed">
                   <span class="mobile_menu_bar mobile_menu_bar_toggle"><?php $t ('header-more');?></span>
 
@@ -399,7 +399,7 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
             </div>
          </div>
          <!-- Top menu for full screen displays -->
-         <nav id="top-menu-nav" style="background-color:#fff;">
+         <nav id="top-menu-nav">
                <ul id="top-menu" class="nav">
                   <!-- Full display - Family Tree menu item with dropdown menu -->
                   <li
