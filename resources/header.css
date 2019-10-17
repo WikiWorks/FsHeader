@@ -16,6 +16,10 @@
 	font-family: "Museo";
 	src: url('/wiki/public_html/Museo_Slab_500.otf') format("opentype");
 }
+@font-face {
+	font-family: "Proxima Nova Light";
+	src: url('/wiki/public_html/Proxima-Nova-Alt-Light.otf') format("opentype");
+}
 
 /**
  * These rules about font-family need to be reviewed.
@@ -23,13 +27,11 @@
  */
 
 html, body {
-	font-family: Helvetica, Verdana, sans-serif;
+	font-family: 'Proxima Nova Light', Helvetica, Verdana, sans-serif;
 }
 
-/* Where is Proxima Nova font? */
-
-h3, h4, h5, h6 {
-	font-family: Helvetica, "Proxima Nova Light", serif;
+h1, h2, h3, h4, h5, h6 {
+	font-family: Museo, Helvetica, serif;
 }
 
 /* The page title (h1) and any h2 */
@@ -68,48 +70,39 @@ html, body {
 }
 
 h3, h4, h5, h6 {
-	font-family: Helvetica, "Proxima Nova Light", serif;
 	border-bottom: none;
 	color: #252525;
 }
 
-/* these compete with the above H1-6 */
-
 .mw-body h1 {
-	font-family: Helvetica, Verdana, sans;
 	font-size: 1.6rem;
 	color: #252525;
 }
 
 .mw-body h2 {
-	font-family: Helvetica, Verdana, sans;
 	font-size: 1.4rem;
 	line-height: 1.3;
 	color: #080908;
 }
 
 .mw-body h3 {
-	font-family: Helvetica, "Proxima Nova Bold", serif;
 	font-weight: bold;
 	font-size: 1.2rem;
 	color: #080908;
 }
 
 .mw-body h4 {
-	font-family: Helvetica, "Proxima Nova Bold", serif;
 	font-size: 1.2rem;
 	font-weight: bold;
 	color: #252525;
 }
 
 .mw-body h5 {
-	font-family: Helvetica, "Proxima Nova Light", serif;
 	font-size: 1.2rem;
 	font-weight: normal !important;
 }
 
 .mw-body h6 {
-	font-family: Helvetica, "Proxima Nova Light Italics";
 	font-size: 1.1em !important;
 	font-weight: normal !important;
 	font-style: italic;
@@ -1355,10 +1348,6 @@ html .mobile-menu-open body {
 	z-index: 0 !important;
 	/* fixes see-through dropdown menus */
 }
-
-/*@media (max-width:985px) and (min-width: 768px){
-		top:80px;
-	}*/
 
 #simpleSearch {
 	height: 1.6rem;
