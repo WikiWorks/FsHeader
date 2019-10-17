@@ -73,7 +73,7 @@ select {
 /*-----Location button--------------------------------------------------------------------*/
 
 .online_records_button {
-    background-color: #3073dd;
+    background-color: #27c4f4;
     border-radius: 10px;
     color: white;
     width: 210px;
@@ -231,7 +231,7 @@ These and variants can be found in our wiki
     background: #f9f9f9;
     border: 1px #aaa solid;
     border-collapse: collapse;
-    color: black;
+    color: #333;
     width: 100%;
 }
 
@@ -452,11 +452,11 @@ div#mw-navigation #pt-logout, div#mw-navigation #pt-anonlogin, div#mw-navigation
 #fs-footer .footer-container {
     position: relative;
     display: block;
-    color: #7d7976;
+    color: #bab7b1;
 }
 
 #fs-footer .footer-container a {
-    color: #333331 !important;
+    color: #333;
 }
 
 #fs-footer .footer-container .copyright-notice .service-by-link a {
@@ -481,7 +481,7 @@ div#mw-navigation #pt-logout, div#mw-navigation #pt-anonlogin, div#mw-navigation
 
 #fs-footer .footer-container .footer-nav span.menu-item {
     font-family: "Verdana", sans-serif;
-    color: #333331;
+    color: #333;
 }
 
 #fs-footer .footer-container .footer-nav .menu-item {
@@ -526,14 +526,12 @@ div#mw-navigation #pt-logout, div#mw-navigation #pt-anonlogin, div#mw-navigation
 /* make sure missing pages remain colored correctly after visiting */
 
 a.new:visited, #p-personal a.new:visited {
-    color: #a55858 !important;
+    color: #fcb34b !important;
 }
-
-/* change border on input forms to be 1pm, instead of 2px, and grey instead of black */
 
 form input {
     /*    border: 1px solid !important;*/
-    border-color: darkgrey !important;
+    border-color: #bab7b1;
 }
 
 /* example? */
