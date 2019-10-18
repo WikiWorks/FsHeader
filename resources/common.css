@@ -70,7 +70,7 @@ select {
    and pseudo-classes (e.g., :hover).
 ******************************************************************************/
 
-/*-----Location button--------------------------------------------------------------------*/
+/**** Location button ********************************************************/
 
 .online_records_button {
     background-color: #27c4f4;
@@ -92,7 +92,7 @@ select {
     text-decoration: none !important;
 }
 
-/*----------community button---------------------------------------------------------------*/
+/**** community button *******************************************************/
 
 .community_button {
     background-color: #996799;
@@ -114,13 +114,13 @@ select {
     text-decoration: none !important;
 }
 
-/* Remove the blue box-shadow when hovering over header items, which is set by the skin Minerva  */
+/** Remove the blue box-shadow when hovering over header items, which is set by the skin Minerva  */
 
 nav ul li a:hover {
     box-shadow: unset!important;
 }
 
-/* e.g. https://beta.familysearch.org/wiki/en/United_States_Genealogy
+/** e.g. https://beta.familysearch.org/wiki/en/United_States_Genealogy
    e.g. https://beta.familysearch.org/wiki/en/User:Ahancey/Sandbox-columns */
 
 @media screen and (min-width: 1400px) {
@@ -168,15 +168,10 @@ nav ul li a:hover {
     padding: 0px !important;
 }
 
-/* DELETE ME -- NOT FOUND */
-
-div.vectorTabs li a {
-    font-size: inherit;
-}
-
 .vectorTabs li a {
     height: inherit !important;
     padding-bottom: 1rem;
+    font-size: inherit;
 }
 
 .vectorMenu #p-cactions {
@@ -197,7 +192,7 @@ div.floatright, table.floatright {
     border: 0;
 }
 
-/* e.g. https://beta.familysearch.org/wiki/en/User:Ahancey/Sandbox-tables2 */
+/** e.g. https://beta.familysearch.org/wiki/en/User:Ahancey/Sandbox-tables2 */
 
 div.floatleft, table.floatleft {
     float: left;
@@ -207,19 +202,21 @@ div.floatleft, table.floatleft {
     border: 0;
 }
 
-/* e.g. https://beta.familysearch.org/wiki/en/GuidedResearch:Why_Can%27t_I_Find_the_Record_-_Lancashire_Births */
+/** e.g. https://beta.familysearch.org/wiki/en/GuidedResearch:Why_Can%27t_I_Find_the_Record_-_Lancashire_Births */
 
 .plainlinks a {
     background: none !important;
     padding: 0 !important;
 }
 
-/* prettytable class for skinning normal tables
+/** prettytable class for skinning normal tables
 e.g. https://beta.familysearch.org/wiki/en/FamilySearch_Indexing_Updates
 e.g. https://beta.familysearch.org/wiki/en/FamilySearch_Wiki:New_Contributors_Training
 e.g. https://beta.familysearch.org/wiki/en/User:Batsondl/Sandbox_20
 Beware!! There is a 'template:prettytable' that is totally different:
-Should eliminate the template and replace it with built-in class wikitable 
+
+@FIXME Should eliminate the template and replace it with built-in class wikitable 
+
 These and variants can be found in our wiki
 {| class="prettytable" |
 {| class="wikitable sortable" {{prettytable}} 
@@ -249,7 +246,7 @@ These and variants can be found in our wiki
     font-weight: bold;
 }
 
-/* For linked citation numbers and document IDs, where
+/** For linked citation numbers and document IDs, where
    the number need not be shown on a screen or a handheld,
    but should be included in the printed version */
 
@@ -271,7 +268,7 @@ These and variants can be found in our wiki
     hyphens: auto;
 }
 
-/* Style for horizontal lists (separator following item).
+/** Style for horizontal lists (separator following item).
    IE8-specific classes are assigned in [[MediaWiki:Common.js/IEFixes.js]].
    @source mediawiki.org/wiki/Snippets/Horizontal_lists
    @revision 5 (2014-02-24)
