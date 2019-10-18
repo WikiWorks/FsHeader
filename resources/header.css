@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Museo, Helvetica, Verdana, serif;
 }
 
-header#main-header * {
+header#main-header {
 	font-family: Verdana!important;
 }
 
