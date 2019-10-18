@@ -78,6 +78,14 @@ pre, code, tt, kbd, samp, .mw-code {
 1. Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).
 ******************************************************************************/
 
+/** include padding and borders in determining box size 
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 }
@@ -210,12 +218,6 @@ img, li, ul, form, label {
 	line-height: 1.5em;
 	margin: 0;
 	padding: 0;
-}
-
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 img {
