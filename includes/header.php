@@ -88,7 +88,7 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
                <img src="/wiki/public_html/img/logo.png" alt="<?php $t ('header-fswiki');?>" id="logo" data-height-percentage="54">
             </a>
          </div>  <!-- end .logo_container -->
-         <div id="et-top-navigation" data-height="66" data-fixed-height="40">
+         <div id="et-top-navigation" data-height="66" data-fixed-height="40" class="noprint">
             <div id="header-right-section">
                <div id="secondary-navigation">
                   <div class="container clearfix">
@@ -399,7 +399,7 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
             </div>
          </div>
          <!-- Top menu for full screen displays -->
-         <nav id="top-menu-nav">
+         <nav id="top-menu-nav" class="noprint">
                <ul id="top-menu" class="nav">
                   <!-- Full display - Family Tree menu item with dropdown menu -->
                   <li
