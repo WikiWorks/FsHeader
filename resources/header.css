@@ -5,11 +5,10 @@
  *
  * @FIXME To close up the whitespace above the tabs, set the margin-top for left-navigation 
  * and right-navigation to only .5em and set a negative margin of -33px on #content
+ * 
  */
 
-/******************************************************************************
- Print styles
-******************************************************************************/
+/**** Print styles ***********************************************************/
 
 @media print {
 	form, input {
@@ -17,9 +16,7 @@
 	}
 }
 
-/******************************************************************************
- Typography
-******************************************************************************/
+/**** Typography *************************************************************/
 
 @font-face {
 	font-family: "Museo";
@@ -35,11 +32,6 @@
 	font-family: "Proxima Nova Condensed Light";
 	src: url('/wiki/public_html/Proxima-Nova-Condensed-Light.otf') format("opentype");
 }
-
-/**
- * These rules about font-family need to be reviewed.
- * If body is 'sans-serif' while headings are 'serif', why are they both Helvetica?
- */
 
 html, body {
 	font-family: Helvetica, Verdana, sans-serif;
@@ -59,10 +51,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Museo, Helvetica, Verdana, serif;
 }
 
-header#main-header {
-	font-family: Verdana!important;
-}
-
 pre, code, tt, kbd, samp, .mw-code {
 	font-family: monospace, Courier;
 }
@@ -80,6 +68,7 @@ pre, code, tt, kbd, samp, .mw-code {
 
 /** include padding and borders in determining box size 
  * @see https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -147,9 +136,7 @@ h6 {
 	color: #333;
 }
 
-/*****************************************************************************
-Lists
-******************************************************************************/
+/**** Lists ******************************************************************/
 
 ul li {
 	line-height: 1.25rem;
@@ -171,13 +158,6 @@ ul {
 	list-style: none;
 }
 
-/** I don't know why this rule is here, but it doubles the list markers
- * in the TOC
-.mw-body-content #mw-content-text .mw-parser-output ul li {
-	list-style-type: disc;
-}
-*/
-
 /** used in the #secondary-navigation .container for #et-secondary-menu */
 
 .clearfix:after {
@@ -186,8 +166,7 @@ ul {
 	clear: both;
 }
 
-/* when in mobile view, keep the
-search box from disappearing under the header */
+/** when in mobile view, keep the search box from disappearing under the header */
 
 .clearfix:after .overlay, .overlay-enabled #mw-mf-page-center {
 	position: relative;
@@ -272,9 +251,7 @@ a {
 	background-image: unset!important;
 }
 
-/*****************************************************************************
-Forms
-******************************************************************************/
+/**** Forms ******************************************************************/
 
 /** We use the inputbox extension to create forms.
 * Can be found on pages such as
@@ -329,9 +306,7 @@ input[type=tel], input[type=color], input[type=password], input[type=datetime], 
 	border-radius: 0;
 }
 
-/******************************************************************************
-Navigation
-******************************************************************************/
+/**** Navigation *************************************************************/
 
 /**
  * @FIXME The #top-menu element appears twice in header.php
@@ -400,7 +375,7 @@ Navigation
 	border: 1px solid #246bdb;
 }
 
-/***************** side-nav menu icons *************************************/
+/**** side-nav menu icons ****************************************************/
 
 .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-tree>a, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-search>a, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-memories>a, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-indexing>a, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-temple>a, .mobile_nav #top-menu li.menu-item.menu-item-has-children.icon-help>a {
 	line-height: 25px;
@@ -583,9 +558,7 @@ Navigation
 	background-image: url("/wiki/public_html/img/temple.svg");
 }
 
-/**
-	* Hide the menu graphics on large displays
-	*/
+/** Hide the menu graphics on large displays */
 
 @media screen and (min-width: 992px) {
 	#top-menu>.icon-tree>a:before, #top-menu>.icon-search>a:before, #top-menu>.icon-memories>a:before, #top-menu>.icon-indexing>a:before, #top-menu>.icon-temple>a:before {
@@ -824,6 +797,8 @@ top-menu-nav the "Family Tree Search Memories Indexing" menu across the top
 	}
 }
 
+/** In order to target the true 'top-menu' you must prefix 'top-menu-nav' *****/
+
 #top-menu-nav #top-menu {
 	display: flex!important;
 	justify-content: space-evenly;
@@ -847,8 +822,6 @@ top-menu-nav the "Family Tree Search Memories Indexing" menu across the top
 		padding-top: 35px;
 	}
 }
-
-/** In order to target the true 'top-menu' you must prefix 'top-menu-nav' *****/
 
 #top-menu-nav #top-menu>.menu-item {
 	padding: 0;
@@ -1379,11 +1352,12 @@ html .mobile-menu-open body {
 	margin-left: 1.25em;
 }
 
-#simpleSearch #searchInput {
+/** important because Vector only gives .2 padding-bottom */
+#searchInput {
 	padding: 0.2em 0 0.5em 0.2em!important;
 }
 
-/* when in mobile view, stop skin Minerva from defining a small grey line above
+/** when in mobile view, stop skin Minerva from defining a small grey line above
 the header list items.*/
 
 nav ul li {
