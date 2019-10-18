@@ -1,3 +1,12 @@
+/**
+ * You can comment AS MUCH AS YOU WANT in this document. All comments are 
+ * automatically stripped by the Resource Loader so that they don't add weight
+ * to the document.
+ *
+ * @FIXME To close up the whitespace above the tabs, set the margin-top for left-navigation 
+ * and right-navigation to only .5em and set a negative margin of -33px on #content
+ */
+
 /******************************************************************************
  Print styles
 ******************************************************************************/
@@ -16,6 +25,7 @@
 	font-family: "Museo";
 	src: url('/wiki/public_html/Museo_Slab_500.otf') format("opentype");
 }
+
 @font-face {
 	font-family: "Proxima Nova Light";
 	src: url('/wiki/public_html/Proxima-Nova-Alt-Light.otf') format("opentype");
@@ -25,7 +35,6 @@
 	font-family: "Proxima Nova Condensed Light";
 	src: url('/wiki/public_html/Proxima-Nova-Condensed-Light.otf') format("opentype");
 }
-
 
 /**
  * These rules about font-family need to be reviewed.
@@ -58,6 +67,13 @@ pre, code, tt, kbd, samp, .mw-code {
 	font-family: monospace, Courier;
 }
 
+@media print {
+	p {
+		margin: .5em;
+		page-break-inside: avoid;
+	}
+}
+
 /******************************************************************************
 1. Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).
 ******************************************************************************/
@@ -74,50 +90,45 @@ html, body {
 /* The page title (h1) and any h2 */
 
 #firstHeading, #content h2 {
-	color: #87b940;
 	line-height: 1.3;
 	border-bottom: 1px solid #aaa;
 }
 
 h3, h4, h5, h6 {
 	border-bottom: none;
-	color: #333;
+	color: #87b940;
 }
 
-.mw-body h1 {
+h1 {
 	font-size: 1.6rem;
 	color: #87b940;
 }
 
-.mw-body h2 {
+h2 {
 	font-size: 1.4rem;
 	line-height: 1.3;
 	color: #87b940;
 }
 
-.mw-body h3 {
+h3 {
 	font-weight: bold;
 	font-size: 1.2rem;
-	color: #87b940;
 }
 
-.mw-body h4 {
+h4 {
 	font-size: 1.2rem;
 	font-weight: bold;
-	color: #87b940;
 }
 
-.mw-body h5 {
+h5 {
 	font-size: 1.2rem;
 	font-weight: normal;
-	color: #87b940;
 }
 
-.mw-body h6 {
+h6 {
 	font-size: 1.1em;
 	font-weight: normal;
 	font-style: italic;
-	color: #87b940;
 }
 
 /* */
@@ -152,9 +163,12 @@ ul {
 	list-style: none;
 }
 
+/** I don't know why this rule is here, but it doubles the list markers
+ * in the TOC
 .mw-body-content #mw-content-text .mw-parser-output ul li {
 	list-style-type: disc;
 }
+*/
 
 /** used in the #secondary-navigation .container for #et-secondary-menu */
 
@@ -311,13 +325,6 @@ input[type=tel], input[type=color], input[type=password], input[type=datetime], 
 	line-height: 1.275;
 	border: 1px solid #cccccc;
 	border-radius: 0;
-}
-
-/** Set width of search box to 70%, so 'go' button stays inline. 
- * To correct the ID name to 'search-box', edit the Searchbox template then this file */
-
-#bodySearchInputHomePageSearchBox {
-	width: 70%;
 }
 
 /******************************************************************************
@@ -1379,4 +1386,11 @@ the header list items.*/
 
 nav ul li {
 	border-top: unset !important;
+}
+
+/** Set width of search box to 70%, so 'go' button stays inline. 
+ * To correct the ID name to 'search-box', edit the Searchbox template then this file */
+
+#bodySearchInputHomePageSearchBox {
+	width: 70%;
 }
