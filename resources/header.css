@@ -262,7 +262,6 @@ a {
 	display: block;
 	font-size: 14px;
 	font-weight: 700;
-	height: auto;
 	left: 5px;
 	line-height: normal;
 	padding: 15px 23px 14px;
@@ -270,7 +269,6 @@ a {
 	text-decoration: none;
 	text-transform: none;
 	top: 5px;
-	width: auto;
 	z-index: 100000;
 }
 
@@ -291,7 +289,6 @@ form input {
 	border-radius: 4px;
 	background-color: #fff;
 	border: 2px solid;
-	height: auto;
 	line-height: normal;
 }
 
@@ -313,7 +310,6 @@ input[type="text"]:not(.et_pb_s):focus, input[type="text"]:not(.et_pb_s):active 
 }
 
 input[type=number], input[type=email], input[type=url], input[type=search] {
-	height: 2.5em;
 	padding: 0.1em;
 	padding-left: 1em;
 	padding-right: 1em;
@@ -322,12 +318,10 @@ input[type=number], input[type=email], input[type=url], input[type=search] {
 input[type=tel], input[type=color], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=text] {
 	font: 13.3333px Arial;
 	font-size: .875em;
-	width: 100%;
 	border-image: initial;
 	color: #333;
 	box-shadow: none;
 	padding: 1.185em;
-	height: 2.275em;
 	line-height: 1.275;
 	border: 1px solid #cccccc;
 	border-radius: 0;
@@ -603,8 +597,6 @@ ul #top-menu {
 }
 
 .mobile-nav ul#top-menu {
-	max-height: unset!important;
-	width: 100%;
 	padding: 22px;
 	background-color: #fff;
 	margin-top: 10px;
@@ -890,7 +882,6 @@ ul #top-menu {
 	border: 1px solid #CDCDCD;
 	background: #fff;
 	z-index: 9999;
-	width: auto;
 	visibility: hidden;
 	opacity: 0;
 }
@@ -901,7 +892,6 @@ ul #top-menu {
 	position: absolute;
 	border-style: solid;
 	display: block;
-	width: 0;
 	z-index: 1001;
 	top: -16px;
 	margin-left: -16px;
@@ -915,7 +905,6 @@ ul #top-menu {
 	position: absolute;
 	border-style: solid;
 	display: block;
-	width: 0;
 	z-index: 1001;
 	visibility: visible!important;
 	top: -15px;
@@ -1010,7 +999,6 @@ ul #top-menu {
 	border-radius: 5px 0 0 5px;
 	border: 1px solid #858585;
 	border-right: none;
-	width: 100%;
 	height: 26px;
 	padding-left: 5px;
 	font-size: 12px;
@@ -1043,7 +1031,6 @@ ul #top-menu {
 	visibility: hidden;
 	opacity: 0;
 	transition: all .2s ease-in-out;
-	width: 265px;
 	padding: 20px 25px;
 	border: 1px solid #cdcdcd;
 }
@@ -1148,7 +1135,6 @@ ul #top-menu {
 	position: absolute;
 	border-style: solid;
 	display: block;
-	width: 0;
 	z-index: 1001;
 	visibility: visible!important;
 	top: -15px;

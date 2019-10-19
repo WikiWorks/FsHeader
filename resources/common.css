@@ -58,8 +58,6 @@ select {
     border-style: solid;
     font-size: 1rem;
     font-family: inherit;
-    height: 25px;
-    width: auto;
     padding: 2px 6px 3px;
     margin-top: 3px;
     cursor: pointer;
@@ -169,7 +167,6 @@ nav ul li a:hover {
 }
 
 .vectorTabs li a {
-    height: inherit !important;
     padding-bottom: 1rem;
     font-size: inherit;
 }
@@ -229,7 +226,6 @@ These and variants can be found in our wiki
     border: 1px #aaa solid;
     border-collapse: collapse;
     color: #333;
-    width: 100%;
 }
 
 .prettytable th, .prettytable td {
@@ -261,7 +257,6 @@ These and variants can be found in our wiki
     -ms-word-break: break-all;
     -epub-word-break: break-all;
     word-break: break-all;
-    word-break: break-word;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -epub-hyphens: auto;
@@ -460,7 +455,7 @@ div#mw-navigation #pt-logout, div#mw-navigation #pt-anonlogin, div#mw-navigation
     white-space: nowrap;
 }
 
-#fs-footer .footer-container .copyright-notice, #fs-footer .footer-container .copyright-notice * {
+#fs-footer .footer-container .copyright-notice, #fs-footer .footer-container .copyright-notice {
     font-size: 0.75rem;
 }
 
