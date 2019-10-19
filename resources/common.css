@@ -15,11 +15,9 @@
     padding-top: 73px;
 }
 
-/******************************************************************************
-1. Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).
-******************************************************************************/
+/**** 1. Type selectors (e.g., h1) and pseudo-elements (e.g., ::before). *****/
 
-/* change the box around the code feature */
+/** change the box around the code feature */
 
 code {
     color: #000;
@@ -63,10 +61,7 @@ select {
     cursor: pointer;
 }
 
-/******************************************************************************
-2. Class selectors (e.g., .foo), attributes selectors (e.g., [type=“radio”]) 
-   and pseudo-classes (e.g., :hover).
-******************************************************************************/
+/**** 2. Class selectors .foo, attributes selectors [type=“radio”], pseudo-classes :hover */
 
 /**** Location button ********************************************************/
 
@@ -347,9 +342,7 @@ These and variants can be found in our wiki
     margin-bottom: 0;
 }
 
-/******************************************************************************
-3. ID selectors (e.g., #example).
-******************************************************************************/
+/**** 3. ID selectors (e.g., #example). **************************************/
 
 #mainContent p {
     clear: none;
@@ -511,9 +504,7 @@ div#mw-navigation #pt-logout, div#mw-navigation #pt-anonlogin, div#mw-navigation
     }
 }
 
-/******************************************************************************
-4. MediaWiki:Common.css
-******************************************************************************/
+/**** 4. MediaWiki:Common.css ************************************************/
 
 /* make sure missing pages remain colored correctly after visiting */
 

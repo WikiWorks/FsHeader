@@ -103,7 +103,7 @@ html, body {
 	color: #333;
 }
 
-/* The page title (h1) and any h2 */
+/** The page title (h1) and any h2 */
 
 #firstHeading, #content h2 {
 	line-height: 1.3;
@@ -129,8 +129,8 @@ h3, h4, h5, h6 {
 }
 
 .mw-body-content h3 {
+	font-size: 1.3rem;
 	font-weight: bold;
-	font-size: 1.2rem;
 }
 
 .mw-body-content h4 {
@@ -149,95 +149,8 @@ h3, h4, h5, h6 {
 	font-style: italic;
 }
 
-/**** 2. Class Selectors *****************************************************/
-
-.container {
-	width: 100%;
-}
-
-.mw-body p, .mw-body-content p, p {
-	line-height: 1.5em;
-	font-size: 0.875rem;
-	color: #333;
-}
-
-/**** Lists ******************************************************************/
-
-ul li {
-	line-height: 1.25rem;
-	font-size: 0.8rem;
-	color: #333;
-}
-
-ol li {
-	line-height: 1.25rem;
-}
-
-.mw-body ul li, .mw-body-content ul li {
-	line-height: 1.5em;
-	font-size: inherit;
-	color: #333;
-}
-
-/*
-ul {
-	list-style: none;
-}
-*/
-
-/** used in the #secondary-navigation .container for #et-secondary-menu */
-
-.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-/** when in mobile view, keep the search box from disappearing under the header */
-
-.clearfix:after .overlay, .overlay-enabled #mw-mf-page-center {
-	position: relative;
-}
-
-#content a:visited, #content a.external:visited {
-	color: #0b0080;
-}
-
-#content a:hover {
-	text-decoration: underline;
-}
-
-#content a:active {
-	color: #fcb34b;
-}
-
-#content a:focus {
-	outline: 1px dotted #333;
-}
-
-img, li, ul, form, label {
-	border: 0;
-	font-family: inherit;
-	font-size: 100%;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1.5em;
-	margin: 0;
-	padding: 0;
-}
-
-img {
-	height: auto;
-	max-width: 100%;
-}
-
-::selection {
-	background: #444;
-	color: #fff;
-}
-
-::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
-	color: #999;
+#mw-head .vectorMenu h3 {
+	background-image: unset!important;
 }
 
 a {
@@ -246,34 +159,6 @@ a {
 	-o-transition: color .1s ease-in-out, background-color .1s ease-in-out;
 	-webkit-transition: color .1s ease-in-out, background-color .1s ease-in-out;
 	transition: color .1s ease-in-out, background-color .1s ease-in-out;
-}
-
-/** example?? */
-
-.screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute;
-}
-
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	clip: auto;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-weight: 700;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	position: absolute;
-	text-decoration: none;
-	text-transform: none;
-	top: 5px;
-	z-index: 100000;
-}
-
-#mw-head .vectorMenu h3 {
-	background-image: unset!important;
 }
 
 /**** Forms ******************************************************************/
@@ -325,6 +210,114 @@ input[type=tel], input[type=color], input[type=password], input[type=datetime], 
 	line-height: 1.275;
 	border: 1px solid #cccccc;
 	border-radius: 0;
+}
+
+/**** Lists ******************************************************************/
+
+ul li {
+	line-height: 1.25rem;
+	font-size: 0.8rem;
+	color: #333;
+}
+
+ol li {
+	line-height: 1.25rem;
+}
+
+.mw-body ul li, .mw-body-content ul li {
+	line-height: 1.5em;
+	font-size: inherit;
+	color: #333;
+}
+
+img, li, ul, form, label {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+
+/**** 2. Class Selectors (.foo), attributes selectors ([type=“radio”]) pseudo-classes (:hover */
+
+.container {
+	width: 100%;
+}
+
+.mw-body p, .mw-body-content p, p {
+	line-height: 1.5em;
+	font-size: 0.875rem;
+	color: #333;
+}
+
+/** used in the #secondary-navigation .container for #et-secondary-menu */
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/** when in mobile view, keep the search box from disappearing under the header */
+
+.clearfix:after .overlay, .overlay-enabled #mw-mf-page-center {
+	position: relative;
+}
+
+#content a:visited, #content a.external:visited {
+	color: #0b0080;
+}
+
+#content a:hover {
+	text-decoration: underline;
+}
+
+#content a:active {
+	color: #fcb34b;
+}
+
+#content a:focus {
+	outline: 1px dotted #333;
+}
+
+::selection {
+	background: #444;
+	color: #fff;
+}
+
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+	color: #999;
+}
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	clip: auto;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	position: absolute;
+	text-decoration: none;
+	text-transform: none;
+	top: 5px;
+	z-index: 100000;
 }
 
 /**** Navigation *************************************************************/
@@ -717,6 +710,8 @@ ul #top-menu {
 		transform: scale(1);
 	}
 }
+
+/**** 3. ID selectors (e.g., #example). **************************************/
 
 #et-mobile-nav-menu {
 	position: absolute;
@@ -1344,6 +1339,9 @@ html .mobile-menu-open body {
 #mw-panel .portal .body {
 	margin-left: 1.25em;
 }
+
+
+/**** !important overrides ***************************************************/
 
 /** important because Vector only gives .2 padding-bottom 
 * need the #simpleSearch selector to only affect the desktop view */
