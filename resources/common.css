@@ -160,6 +160,8 @@ nav ul li a:hover {
     }
 }
 
+/** The following definition is needed for collapsible menu items */
+
 .mw-customtoggle, .mw-collapsible-toggle {
     background: none !important;
     border: none !important;
@@ -170,10 +172,14 @@ nav ul li a:hover {
     padding: 0px !important;
 }
 
+/**  Fix selection box size in page tabs ( Read, Edit, View History, etc.) */
+
 .vectorTabs li a {
     padding-bottom: 1rem;
     font-size: inherit;
 }
+
+/**  fix clickable box around the 'more' tab at the top of the page. */
 
 .vectorMenu #p-cactions {
     margin-top: 0.5rem;
@@ -183,7 +189,8 @@ nav ul li a:hover {
     line-height: 1.125rem;
 }
 
-/**/
+/** images  Note the if you wrap your image in a p tag rather than a div
+ * you can get a better print layout */
 
 div.floatright, table.floatright {
     clear: right;
@@ -256,6 +263,8 @@ These and variants can be found in our wiki
     }
 }
 
+/** Breaks long urls, etc., rather than overflowing box */
+
 .url {
     word-wrap: break-word;
     -ms-word-break: break-all;
@@ -284,13 +293,19 @@ These and variants can be found in our wiki
     padding: 0;
 }
 
+/** Display list items inline */
+
 .hlist dd, .hlist dt, .hlist li {
     display: inline;
 }
 
+/** Display nested lists inline */
+
 .hlist dl dl, .hlist dl ol, .hlist dl ul, .hlist ol dl, .hlist ol ol, .hlist ol ul, .hlist ul dl, .hlist ul ol, .hlist ul ul {
     display: inline;
 }
+
+/** Generate interpuncts */
 
 .hlist dt:after {
     content: ": ";
@@ -301,6 +316,8 @@ These and variants can be found in our wiki
     font-weight: bold;
 }
 
+/** For IE8 */
+
 .hlist dd:last-child:after, .hlist dt:last-child:after, .hlist li:last-child:after {
     content: none;
 }
@@ -308,6 +325,8 @@ These and variants can be found in our wiki
 .hlist dd.hlist-last-child:after, .hlist dt.hlist-last-child:after, .hlist li.hlist-last-child:after {
     content: none;
 }
+
+/** Add parentheses around nested lists */
 
 .hlist dd dd:first-child:before, .hlist dd dt:first-child:before, .hlist dd li:first-child:before, .hlist dt dd:first-child:before, .hlist dt dt:first-child:before, .hlist dt li:first-child:before, .hlist li dd:first-child:before, .hlist li dt:first-child:before, .hlist li li:first-child:before {
     content: " (";
@@ -319,10 +338,14 @@ These and variants can be found in our wiki
     font-weight: normal;
 }
 
+/** For IE8 */
+
 .hlist dd dd.hlist-last-child:after, .hlist dd dt.hlist-last-child:after, .hlist dd li.hlist-last-child:after, .hlist dt dd.hlist-last-child:after, .hlist dt dt.hlist-last-child:after, .hlist dt li.hlist-last-child:after, .hlist li dd.hlist-last-child:after, .hlist li dt.hlist-last-child:after, .hlist li li.hlist-last-child:after {
     content: ") ";
     font-weight: normal;
 }
+
+/** Put ordinals in front of ordered list items */
 
 .hlist ol {
     counter-reset: listitem;
@@ -341,6 +364,8 @@ These and variants can be found in our wiki
     content: " (" counter(listitem) " ";
 }
 
+/** Unbulleted lists */
+
 .plainlist ul {
     line-height: inherit;
     list-style: none none;
@@ -351,7 +376,47 @@ These and variants can be found in our wiki
     margin-bottom: 0;
 }
 
+/** tooltip popup box */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #85B807;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom:100%;
+    left: 50%;
+    margin-left: -60px;
+    /** Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #85B807 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 /**** 3. ID selectors (e.g., #example). **************************************/
+
+/** Entries to counter wiki css code that is disrupting the ability of text to flow */
 
 #mainContent p {
     clear: none;
@@ -378,6 +443,8 @@ div#mw-panel div.portal h3 {
     font-family: Helvetica, Verdana, san-serif;
 }
 
+/** Entries to counter wiki css code for TOC */
+
 #toc {
     width: auto;
 }
@@ -391,6 +458,7 @@ div#mw-panel div.portal h3 {
     list-style: none;
 }
 
+/** get rid of 'language' at the top of the screen, next to username */
 #pt-uls a.uls-trigger {
     display: none;
 }
