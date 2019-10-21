@@ -11,22 +11,22 @@
  * 
  * 
  * Contents: 
- (You can update w/ grep '/\*\*\*\* '  resources/header.css | awk -F* '{print $5}')
-
- Print styles 
- Typography 
- 1. Type selectors (e.g., h1) and pseudo-elements (e.g., ::before). 
- 2. Class Selectors 
- Lists 
- Forms 
- Navigation 
- side-nav-buttons "sign in" "free account" 
- side-nav menu icons 
- white triangle 
- Setup the navigation icons as backgrounds 
- top-menu-nav the "Family Tree Search Memories Indexing" menu 
- Sub-menu for the side-menu (mobile)
-*/
+ * update w/ grep '/\*\*\*\* '  resources/header.css | awk -F* '{print "* " $5}'
+ * 
+ *  Print styles 
+ *  Typography 
+ *  1. Type selectors (e.g., h1) and pseudo-elements (e.g., ::before). 
+ *  2. Class Selectors 
+ *  Lists 
+ *  Forms 
+ *  Navigation 
+ *  side-nav-buttons "sign in" "free account" 
+ *  side-nav menu icons 
+ *  white triangle 
+ *  Setup the navigation icons as backgrounds 
+ *  top-menu-nav the "Family Tree Search Memories Indexing" menu 
+ *  Sub-menu for the side-menu (mobile)
+ */
 
 /**** Print styles ***********************************************************/
 
