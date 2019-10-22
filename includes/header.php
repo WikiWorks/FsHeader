@@ -248,11 +248,6 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
                               class="menu-item icon-tree menu-item-type-custom menu-item-object-custom menu-item-39791">
                               <a href="https://www.familysearch.org/tree/list/people"><?php $t ('header-lists');?></a>
                            </li>
-                           <!-- Family Tree -> Family Booklet menu item -->
-                           <li id="menu-item-39792"
-                              class="menu-item icon-tree menu-item-type-custom menu-item-object-custom menu-item-39792">
-                              <a href="https://www.familysearch.org/myfamily/"><?php $t ('header-familybooklet');?></a>
-                           </li>
                         </ul>
                      </li>  <!-- end of Family Tree menu item and dropdown menu -->
                      <!-- Mobile view - Search header item with dropdown menu items -->
@@ -422,10 +417,6 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
                         <!-- Family Tree -> Lists -->
                         <li class="menu-item icon-tree menu-item-type-custom menu-item-object-custom menu-item-39791">
                            <a href="https://www.familysearch.org/tree/list/people"><?php $t ('header-lists');?></a>
-                        </li>
-                        <!-- Family Tree -> Family Booklet -->
-                        <li class="menu-item icon-tree menu-item-type-custom menu-item-object-custom menu-item-39792">
-                           <a href="https://www.familysearch.org/myfamily/"><?php $t ('header-familybooklet');?></a>
                         </li>
                      </ul>
                   </li>  <!-- end Family Tree menu item in full display header -->
