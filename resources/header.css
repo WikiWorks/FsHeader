@@ -118,7 +118,7 @@ h3, h4, h5, h6 {
 /** we have to use the class selector so that Vector doesn't override us */
 
 .mw-body-content h1 {
-	font-size: 1.6rem;
+	font-size: 1.6rem!important;
 	color: #333;
 }
 
@@ -214,10 +214,14 @@ input[type=tel], input[type=color], input[type=password], input[type=datetime], 
 
 /**** Lists ******************************************************************/
 
+/** Vector sets a list-style-image so we have to set it to none in order
+ * to make our discs black */
+
 ul li {
 	line-height: 1.25rem;
 	font-size: 0.8rem;
-	color: #333;
+	color: black!important;
+	list-style-image:none;
 }
 
 ol li {
@@ -446,7 +450,7 @@ img {
 	position: absolute;
 	top: 0;
 	right: 0;
-	display: none;
+	/**display: none;*/
 }
 
 @media screen and (min-width: 992px) {
@@ -696,6 +700,7 @@ ul #top-menu {
 	flex-grow: 1;
 	padding-left: 0!important;
 	list-style: none;
+	margin-right:250px;
 }
 
 @media screen and (min-width: 992px) {
@@ -723,6 +728,7 @@ ul #top-menu {
 
 #et-mobile-nav-menu .mobile-nav {
 	position: relative;
+	margin-right:250px;
 }
 
 @media screen and (min-width: 992px) {
