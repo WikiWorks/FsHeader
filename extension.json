@@ -41,11 +41,18 @@
 			"scripts": [],
 			"targets": ["desktop", "mobile"]
 		},
+		"ext.FsHeader.maps": {
+			"dependencies": [],
+			"messages": [],
+			"styles": [],
+			"scripts": ["jQuery-rwdImageMaps/jquery.rwdImageMaps.js"],
+			"targets": ["desktop", "mobile"]
+		},
 		"ext.FsHeader.scripts": {
 			"dependencies": [],
 			"messages": [],
 			"styles": [],
-			"scripts": ["jQuery-rwdImageMaps/jquery.rwdImageMaps.js", "script.js"],
+			"scripts": ["script.js"],
 			"targets": ["desktop", "mobile"]
 		}
 	},
