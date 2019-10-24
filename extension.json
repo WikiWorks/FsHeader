@@ -45,7 +45,7 @@
 			"dependencies": [],
 			"messages": [],
 			"styles": [],
-			"scripts": ["script.js", "jQuery-rwdImageMaps/jquery.rwdImageMaps.js"],
+			"scripts": ["jQuery-rwdImageMaps/jquery.rwdImageMaps.js", "script.js"],
 			"targets": ["desktop", "mobile"]
 		}
 	},
