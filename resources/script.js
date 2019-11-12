@@ -31,7 +31,15 @@ $(document).ready(function(e) {
 	}
 	///////////// end mobile footer placement ///////////////////////
 
-
+	/** Begin search replacement for Main Page */
+	var searchBad = document.getElementById('bodySearchHomePageSearchBox');
+	var searchForm = document.getElementById('searchform');
+	var dupNode = searchForm.cloneNode(true);
+	searchBad.parentNode.replaceChild(dupNode,searchBad);
+	// searchBad.parentNode.replaceChild(searchForm,searchBad);
+	var searchInput = document.getElementById('searchInput');
+	searchInput.style.fontSize = "large";
+	/** end search replacement */
 
 	var mobile_menus = $(".mobile-nav .menu-item-has-children .sub-menu").hide();
 
