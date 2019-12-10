@@ -1,3 +1,5 @@
+window.FS = window.FS || {};
+
 $(document).ready(function(e) {
 
 	/** Guided Research Image Map */
@@ -64,8 +66,6 @@ $(document).ready(function(e) {
 	searchInput.style.fontSize = "large";
 	/** end search replacement */
 
-	var mobile_menus = $(".mobile-nav .menu-item-has-children .sub-menu").hide();
-
 	//on page resize re-calculate the left padding on the nav menu
 	jQuery(window).on("load resize", function () {
 
@@ -75,32 +75,8 @@ $(document).ready(function(e) {
 		jQuery("#et-top-navigation").css("padding-left", logo_width + "px !important");
 	});
 
-	jQuery(".mobile-nav").on("click", "#top-menu > .menu-item-has-children > a", function(e) {
 
-		e.stopPropagation();
-		e.preventDefault();
-		//hide all the mobile menus
-		mobile_menus.slideUp();
-		var parent_element = jQuery(this).parent();
 
-		if(jQuery(parent_element).hasClass("expand")) {
-				jQuery(parent_element).removeClass("expand");
-		} else {
-				jQuery(".menu-item-has-children").removeClass("expand");
-				jQuery(parent_element).addClass("expand");
-				jQuery(parent_element).find(".sub-menu").slideDown();
-				return false;
-		}
-	});
-
-	jQuery(".mobile-menu-bar-toggle").on("click", function (e) {
-		e.stopPropagation();
-		e.preventDefault();
-		jQuery(".mobile-nav").toggleClass("closed");
-		jQuery(".mobile-nav").toggleClass("opened");
-		console.log("mobile-menu-open");
-		jQuery("html").toggleClass("mobile-menu-open");
-	});
 
 	//sticky footer
 	function sticky_footer() {
@@ -122,48 +98,237 @@ $(document).ready(function(e) {
 		jQuery(selector).css('min-height', ch);
 	}
 
-
-	//if there is a click on 'body' while the mobile menu is opened close it
-	jQuery("html").on("click", "body", function () {
-		if ($("html").hasClass("mobile-menu-open")) {
-			jQuery("html").removeClass("mobile-menu-open");
-		}
-	});
-
-
 });
 
 
-// We use this function to determine the current wiki based on path
-// parseUri 1.2.2
-// (c) Steven Levithan <stevenlevithan.com>
-// MIT License
 
-function parseUri (str) {
-	var	o   = parseUri.options,
-		m   = o.parser[o.strictMode ? "strict" : "loose"].exec(str),
-		uri = {},
-		i   = 14;
 
-	while (i--) uri[o.key[i]] = m[i] || "";
+!function(e, t, n) {
+    e.HF = e.HF || {};
 
-	uri[o.q.name] = {};
-	uri[o.key[12]].replace(o.q.parser, function ($0, $1, $2) {
-		if ($1) uri[o.q.name][$1] = $2;
-	});
 
-	return uri;
-};
-
-parseUri.options = {
-	strictMode: false,
-	key: ["source","protocol","authority","userInfo","user","password","host","port","relative","path","directory","file","query","anchor"],
-	q:   {
-		name:   "queryKey",
-		parser: /(?:^|&)([^&=]*)=?([^&]*)/g
-	},
-	parser: {
-		strict: /^(?:([^:\/?#]+):)?(?:\/\/((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?))?((((?:[^?#\/]*\/)*)([^?#]*))(?:\?([^#]*))?(?:#(.*))?)/,
-		loose:  /^(?:(?![^:@]+:[^:@\/]*@)([^:\/?#.]+):)?(?:\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/
-	}
-};
+    !function() {
+        var n, r = t.querySelectorAll("#header2019 .nav-menu-trigger");
+        function i(t) {
+            if (this.classList.contains("nav-menu-trigger")) {
+                var r = !1;
+                this.nextElementSibling !== n && (r = !0),
+                a(),
+                r && function(t) {
+                    if (t) {
+                        n = t,
+                        t.previousElementSibling.setAttribute("aria-expanded", "true"),
+                        t.previousElementSibling.classList.add("active"),
+                        t.setAttribute("aria-hidden", "false"),
+                        t.style.display = "block";
+                        var r = e.innerWidth
+                          , i = t.getBoundingClientRect();
+                        i.right > r && (t.style.marginLeft = "-" + (i.right - r) + "px")
+                    }
+                }(this.nextElementSibling),
+                t.stopPropagation()
+            }
+        }
+        function a() {
+            n && (n.previousElementSibling.setAttribute("aria-expanded", "false"),
+            n.previousElementSibling.classList.remove("active"),
+            n.setAttribute("aria-hidden", "true"),
+            n.style.marginLeft = "",
+            n.style.display = "",
+            n = null)
+        }
+        Array.prototype.forEach.call(r, function(e) {
+            e.addEventListener("click", i)
+        }),
+        t.addEventListener("click", a)
+    }(),
+    // FS.User.sessionId && (r = function(e) {
+    //     if (e > 0) {
+    //         var n = t.querySelector("#messagesLink .unread-message-badge");
+    //         n && (n.style.display = "block")
+    //     }
+    // }
+    // ,
+    // i = FS.baseUrl + "/service/messaging/inbox/users/" + FS.User.profile.cisId + "/counters",
+    // a = [["Accept", "application/json"], ["Authorization", "Bearer " + FS.User.sessionId]],
+    // FS.xhr("GET", i, a, null, function(e) {
+    //     if (200 !== e.status)
+    //         return console.warn("Network Error: " + e.response);
+    //     var t = FS.JSON.parse(e.responseText);
+    //     r(t.totalUnreadThreads)
+    // })),
+    !function() {
+		var t = document;
+        var e, n = t.getElementById("mobileDrawerContainer"), r = t.getElementById("mobileDrawer");
+        t.getElementById("hamburgerLink").addEventListener("click", function() {
+            n.classList.add("open"),
+            setTimeout(l)
+        }),
+        t.getElementById("closeDrawer").addEventListener("click", a);
+        var i = t.querySelectorAll("#mobileDrawer .menuTrigger");
+        function a() {
+            n.classList.remove("open"),
+            t.body.removeEventListener("click", s),
+            t.body.removeEventListener("keyup", c)
+        }
+        function o(t) {
+            if (this.classList.contains("menuTrigger")) {
+                var n = !1;
+                this.nextElementSibling !== e && (n = !0),
+                e && (e.previousElementSibling.setAttribute("aria-expanded", "false"),
+                e.previousElementSibling.classList.remove("active"),
+                e.setAttribute("aria-hidden", "true"),
+                e.classList.remove("active"),
+                e = null),
+                n && (r = this.nextElementSibling) && (e = r,
+                r.previousElementSibling.setAttribute("aria-expanded", "true"),
+                r.previousElementSibling.classList.add("active"),
+                r.setAttribute("aria-hidden", "false"),
+                r.classList.add("active")),
+                t.stopPropagation()
+            }
+            var r
+        }
+        function l() {
+            t.body.addEventListener("click", s),
+            t.body.addEventListener("keyup", c)
+        }
+        function s(e) {
+            r.contains(e.target) || a()
+        }
+        function c(e) {
+            "Escape" === e.key && a()
+        }
+        Array.prototype.forEach.call(i, function(e) {
+            e.addEventListener("click", o)
+        })
+        FS.User.getCurrentUserPortraitUrl().then(function(e) {
+            if (e) {
+                const n = t.createElement("img");
+                n.classList.add("user-icon"),
+                n.src = e,
+                t.querySelector("#liAccount .user-icon").replaceWith(n)
+            }
+        })
+    }(),
+    function() {
+        HF.hiddenElements = [];
+        var e, n = (e = t.getElementById("header2019"),
+        t.getElementById("hf-floating-header-wrapper") || e);
+        HF.getHeaderHeight = function() {
+            return n ? n.offsetHeight : 0
+        }
+        ,
+        HF.hideHeader = function(e, t) {
+            var r = HF.getHeaderHeight() + 50;
+            n && (Array.isArray(t) ? t.push(n) : t = [n],
+            Array.isArray(e) ? e.push(n) : e = [n]),
+            e.forEach(function(e) {
+                r += e.offsetHeight
+            });
+            var i = "-" + r + "px";
+            t.forEach(function(e) {
+                HF.hiddenElements.push(e),
+                e.style.transition = ".5s",
+                e.style.top = i
+            })
+        }
+        ,
+        HF.unhideHeader = function() {
+            HF.hiddenElements.forEach(function(e) {
+                e.style.transition = ".5s",
+                e.style.top = ""
+            }),
+            HF.hiddenElements = []
+        }
+    }(),
+    HF.updateLang = function(t) {
+        var n = null;
+        if (e.location.hostname.match("familysearch.org") && (n = ".familysearch.org"),
+        FS.Cookie.setCookie("fslanguage", t, "/", null, n),
+        -1 !== e.location.href.indexOf("locale=")) {
+            var r = e.location.search.slice(1).split("&").filter(function(e) {
+                return !(0 === e.indexOf("locale="))
+            }).join("&");
+            e.location.href = e.location.pathname + (r ? "?" + r : "")
+        } else
+            HF.dtmLangRoutingPath ? e.location.href = "/" + t + e.location.pathname.substr(HF.dtmLangRoutingPath.length + 1) : e.location.reload()
+    }
+    ,
+    HF.simpleModal = function(e, n) {
+        var r = (n || t).querySelector("#" + e);
+        if ("" === r.style.visibility) {
+            (backdrop = r.querySelector("#" + e + " .backdrop.click-close")) && (backdrop.onclick = function() {
+                HF.simpleModal(e)
+            }
+            );
+            for (var i = r.querySelectorAll("#" + e + " .closeBtn"), a = 0; a < i.length; a++)
+                i[a].onclick = function() {
+                    HF.simpleModal(e)
+                }
+        }
+        "visible" === r.style.visibility ? (r.style.visibility = "hidden",
+        r.style.opacity = "0") : (r.style.visibility = "visible",
+        r.style.opacity = "1")
+    }
+    ,
+    function() {
+        if (t.querySelector("#global-footer")) {
+            if (!FS.showEx("trustEEx")) {
+                var e = t.querySelector(".cookie-consent-link");
+                e && e.addEventListener("click", function() {
+                    HF.simpleModal("cookieConsentModal")
+                })
+            }
+            var n = t.querySelectorAll(".langPicker");
+            if (n)
+                for (var r = 0, i = n.length; r < i; r++)
+                    n[r].addEventListener("keydown", e=>{
+                        13 !== e.keyCode && 13 !== e.which || (HF.simpleModal("langPickerModal"),
+                        t.querySelector("#langPickerModal").focus())
+                    }
+                    ),
+                    n[r].addEventListener("click", function() {
+                        HF.simpleModal("langPickerModal"),
+                        t.querySelector("#langPickerModal").focus()
+                    })
+        }
+    }(),
+    e.HF = e.HF || {},
+    HF.showVideoPlayer = function(e, n) {
+        var r = JSON.parse(e.getAttribute("data-config"))
+          , i = t.querySelector("#" + n)
+          , a = r.forceHTML || !1
+          , o = '<object class="BrightcoveExperience"><param name="bgcolor" value="#000000" />' + '<param name="width" value="{0}" />'.format(r.width || "100%") + '<param name="height" value="{0}" />'.format(r.height || "100%") + '<param name="playerID" value="{0}" />'.format(r.playerId || "710849472001") + '<param name="playerKey" value="{0}" />'.format(r.playerKey || "AQ~~,AAAApYNoccE~,xDmRWfqDlPhbhwoOkZ1F_TSoe20nAtRQ") + '<param name="isVid" value="true" /><param name="isUI" value="true" />' + '<param name="autoStart" id="autoStart" value="{0}" />'.format(r.autoPlay || "true") + '<param name="dynamicStreaming" value="true" />' + '<param name="@videoPlayer" value="{0}" />'.format(r.videoId) + '<param name="secureConnections" value="true" /><param name="secureHTMLConnections" value="true" /><param name="includeAPI" value="true" /><param name="templateReadyHandler" value="onTemplateReady" /><param name="htmlFallback" value="true" />';
+        o += a ? '<param name="forceHTML" value="true" />' : "",
+        o += "</object>",
+        i.querySelector(".backdrop").addEventListener("click", function() {
+            i.querySelector("section").innerHTML = ""
+        }),
+        i.querySelector("section").innerHTML = o,
+        HF.simpleModal(n),
+        "undefined" != typeof brightcove ? brightcove.createExperiences() : FS.fetchScript("https://sadmin.brightcove.com/js/BrightcoveExperiences.js", function() {
+            brightcove.createExperiences()
+        })
+    }
+    ,
+    HF.openGetSatisfactionPopup = function(e) {
+        e && e.preventDefault(),
+        t.body.querySelector("#helpFeedbackModal") ? HF.simpleModal("helpFeedbackModal") : FS.xhr("GET", "/ask/getFeedbackModalHTML", null, null, function(e) {
+            var n;
+            try {
+                n = JSON.parse(e.response)
+            } catch (a) {
+                return void console.error("Could not parse response as JSON:", a)
+            }
+            var r = t.createElement("div");
+            t.body.appendChild(r),
+            r.outerHTML = n.markup;
+            var i = t.createElement("script");
+            i.innerHTML = n.script,
+            t.body.appendChild(i),
+            HF.simpleModal("helpFeedbackModal"),
+            "function" == typeof scrollToTop && scrollToTop()
+        })
+    }
+}(window, document);
