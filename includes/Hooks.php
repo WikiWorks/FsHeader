@@ -33,9 +33,8 @@ class Hooks {
 	 */
 	public static function onBeforePageDisplay( OutputPage $out, Skin $skin ) {
 		$out->addModuleStyles( "z.ext.FsHeader.styles" );
-		$out->addModules ("ext.FsHeader.maps");
-		$out->addModules ("ext.FsHeader.scripts");
-
+		$out->addModules( "ext.FsHeader.maps" );
+		$out->addModules( "ext.FsHeader.scripts" );
 		global $wgUser;
 
 		// modify the login links

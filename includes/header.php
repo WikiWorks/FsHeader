@@ -78,7 +78,345 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
 </script><div id='ZN_1YB8u9S54WqyizP'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
 <!--END WEBSITE FEEDBACK SNIPPET-->
 
-<header id="main-header" data-height-onload="74" data-view-service="header">
+
+<header id="header2019" class="logged-out">
+  <div class="top">
+    <div class="left">
+      <h1>
+        
+        <a class="logo beta" href="/" data-test="header-logo" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_logo&quot;}" data-component-init="AdobeLinkTracker">
+          <span class="sr-only">Family Search</span>
+        </a>
+      </h1>
+      <nav id="primaryNav">
+        
+          <div class="primary-nav-item nav-menu-parent ">
+            <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_tree" data-component-init="AdobeLinkTracker" aria-expanded="false">Tree</button>
+            
+              <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu" style="">
+                
+                  <li class="submenu-item ">
+                    <a href="/tree/pedigree" class="submenu-link" data-config="lo_hdr9_tree:pedigree" data-test="pedigree" data-component-init="AdobeLinkTracker">Tree</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/tree/person" class="submenu-link" data-config="lo_hdr9_tree:person" data-test="person" data-component-init="AdobeLinkTracker">Person</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/tree/find" class="submenu-link" data-config="lo_hdr9_tree:findinTree" data-test="findinTree" data-component-init="AdobeLinkTracker">Find</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/tree/list/people" class="submenu-link" data-config="lo_hdr9_tree:lists" data-test="lists" data-component-init="AdobeLinkTracker">Lists</a>
+                  </li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="primary-nav-item nav-menu-parent ">
+            <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_srch" data-component-init="AdobeLinkTracker">Search</button>
+            
+              <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
+                
+                  <li class="submenu-item ">
+                    <a href="/search/" class="submenu-link" data-config="lo_hdr9_srch:records" data-test="records" data-component-init="AdobeLinkTracker">Records</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/tree/find/name" class="submenu-link" data-config="lo_hdr9_srch:findInFamilyTree" data-test="findInFamilyTree" data-component-init="AdobeLinkTracker">Family Tree</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/search/family-trees" class="submenu-link" data-config="lo_hdr9_srch:genealogies" data-test="genealogies" data-component-init="AdobeLinkTracker">Genealogies</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/search/catalog" class="submenu-link" data-config="lo_hdr9_srch:catalog" data-test="catalog" data-component-init="AdobeLinkTracker">Catalog</a>
+                  </li>
+                
+                  <li class="submenu-item books">
+                    <a href="https://www.familysearch.org/library/books/" class="submenu-link" data-config="lo_hdr9_srch:books" data-test="books" data-component-init="AdobeLinkTracker">Books</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/wiki/en/Main_Page" class="submenu-link" data-config="lo_hdr9_srch:wiki" data-test="wiki" data-component-init="AdobeLinkTracker">Research Wiki</a>
+                  </li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="primary-nav-item nav-menu-parent ">
+            <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_photos" data-component-init="AdobeLinkTracker">Memories</button>
+            
+              <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
+                
+                  <li class="submenu-item ">
+                    <a href="/photos/" class="submenu-link" data-config="lo_hdr9_photos:overview" data-test="overview" data-component-init="AdobeLinkTracker">Overview</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/photos/gallery" class="submenu-link" data-config="lo_hdr9_photos:gallery" data-test="gallery" data-component-init="AdobeLinkTracker">Gallery</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/photos/people" class="submenu-link" data-config="lo_hdr9_photos:people" data-test="people" data-component-init="AdobeLinkTracker">People</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/photos/find" class="submenu-link" data-config="lo_hdr9_photos:find" data-test="find" data-component-init="AdobeLinkTracker">Find</a>
+                  </li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="primary-nav-item nav-menu-parent ">
+            <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_indexing" data-component-init="AdobeLinkTracker" aria-expanded="true">Indexing</button>
+            
+              <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
+                
+                  <li class="submenu-item ">
+                    <a href="/indexing/" class="submenu-link" data-config="lo_hdr9_indexing:overview" data-test="overview" data-component-init="AdobeLinkTracker">Overview</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/indexing/my-indexing" class="submenu-link" data-config="lo_hdr9_indexing:web_indexing" data-test="web_indexing" data-component-init="AdobeLinkTracker">Web Indexing</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/indexing/projects" class="submenu-link" data-config="lo_hdr9_indexing:find_a_project" data-test="find_a_project" data-component-init="AdobeLinkTracker">Find a Project</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/indexing/help" class="submenu-link" data-config="lo_hdr9_indexing:get_help" data-test="get_help" data-component-init="AdobeLinkTracker">Help Resources</a>
+                  </li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="primary-nav-item nav-menu-parent ">
+            <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_activities" data-component-init="AdobeLinkTracker" aria-expanded="false">Activities</button>
+            
+              <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu" style="">
+                
+                  <li class="submenu-item ">
+                    <a href="/discovery/about" class="submenu-link" data-config="lo_hdr9_activities:allAboutMe" data-test="allAboutMe" data-component-init="AdobeLinkTracker">All About Me</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/discovery/compare" class="submenu-link" data-config="lo_hdr9_activities:compareAFace" data-test="compareAFace" data-component-init="AdobeLinkTracker">Compare-a-Face</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/discovery/record" class="submenu-link" data-config="lo_hdr9_activities:recordMyStory" data-test="recordMyStory" data-component-init="AdobeLinkTracker">Record My Story</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/discovery/picture" class="submenu-link" data-config="lo_hdr9_activities:pictureMyHeritage" data-test="pictureMyHeritage" data-component-init="AdobeLinkTracker">Picture My Heritage</a>
+                  </li>
+                
+                  <li class="submenu-item ">
+                    <a href="/discovery/activities/" class="submenu-link" data-config="lo_hdr9_activities:inHomeActivities" data-test="inHomeActivities" data-component-init="AdobeLinkTracker">In-Home Activities</a>
+                  </li>
+                
+              </ul>
+            
+          </div>
+        
+      </nav>
+    </div>
+    <div class="right">
+      <nav id="secondaryNav">
+        <div class="nav-menu-parent">
+          <button id="helpLink" class="nav-menu-trigger" aria-haspopup="true" aria-expanded="false" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help&quot;}" data-component-init="AdobeLinkTracker">
+            <img src="https://edge.fscdn.org/assets/components/hf/assets/img/icons/header-help-c9bf91771596fb21d30797738c2aa37a.svg">
+            <span class="nav-trigger-text">Help</span>
+          </button>
+          <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu" style="">
+            <li class="submenu-item"><a href="/home/etb_gettingstarted" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:gettingStarted&quot;}" data-component-init="AdobeLinkTracker">Getting Started</a></li>
+            <div class="submenu-divider"></div>
+            <li class="submenu-item"><a href="/ask/landing" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:helpCenter&quot;}" data-component-init="AdobeLinkTracker">Help Center</a></li>
+            <li class="submenu-item"><a href="/ask/landing?search=Getting%20Started&amp;show=lessons&amp;message=true" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:learningCenter&quot;}" data-component-init="AdobeLinkTracker">Learning Center</a></li>
+            <div class="submenu-divider"></div>
+            <li class="submenu-item"><a href="/help/" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:contactUs&quot;}" data-component-init="AdobeLinkTracker">Contact Us</a></li>
+            <li class="submenu-item"><a href="/help/communities" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:community&quot;}" data-component-init="AdobeLinkTracker">Community</a></li>
+            <li class="submenu-item"><a href="/ask/mycases#/" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:myCases&quot;}" data-component-init="AdobeLinkTracker">My Cases</a></li>
+            <li class="submenu-item"><a href="/wiki/en/Main_Page" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:researchWiki&quot;}" data-component-init="AdobeLinkTracker">Research Wiki</a></li>
+            <div class="submenu-divider"></div>
+            <li class="submenu-item"><a href="/help/helper" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:helperResources&quot;}" data-component-init="AdobeLinkTracker">Helper Resources</a></li>
+          </ul>
+        </div>
+        
+          
+            <a href="/auth/familysearch/login?fhf=true&amp;returnUrl=%2F" id="signInLink" class="highlight" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_login&quot;}" data-component-init="AdobeLinkTracker">Sign In</a>
+            <a href="/register/" id="registerLink" class="highlight border" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_register&quot;}" data-component-init="AdobeLinkTracker">Create Account</a>
+          
+        
+        <button id="hamburgerLink">
+          <img src="https://edge.fscdn.org/assets/components/hf/assets/img/icons/header-hamburger-5eccc4487e684c3f2bdb4f6810d56851.svg">
+        </button>
+      </nav>
+    </div>
+  </div>
+  <div id="mobileDrawerContainer" class="">
+    <div id="mobileDrawer">
+      <button id="closeDrawer">
+        <img src="https://edge.fscdn.org/assets/components/hf/assets/img/icons/close-934062c39475a612a1ac8d6bae631b56.svg">
+      </button>
+      
+        <div id="loAccount">
+          
+            <a href="/auth/familysearch/login?fhf=true&amp;returnUrl=%2F" id="signInLink" class="highlight" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_login&quot;}" data-component-init="AdobeLinkTracker">Sign In</a>
+            <a href="/register/" id="registerLink" class="highlight border" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_register&quot;}" data-component-init="AdobeLinkTracker">Create Account</a>
+          
+        </div>
+      
+      
+        <div class="">
+          <div class="menuRow menuTrigger" data-config="lo_hdr9_tree" data-component-init="AdobeLinkTracker" aria-expanded="false">Tree</div>
+          
+            <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
+              
+                <li class="menuRow ">
+                  <a href="/tree/pedigree" class="submenu-link" data-config="lo_hdr9_tree:pedigree" data-test="pedigree" data-component-init="AdobeLinkTracker">Tree</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/tree/person" class="submenu-link" data-config="lo_hdr9_tree:person" data-test="person" data-component-init="AdobeLinkTracker">Person</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/tree/find" class="submenu-link" data-config="lo_hdr9_tree:findinTree" data-test="findinTree" data-component-init="AdobeLinkTracker">Find</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/tree/list/people" class="submenu-link" data-config="lo_hdr9_tree:lists" data-test="lists" data-component-init="AdobeLinkTracker">Lists</a>
+                </li>
+              
+            </ul>
+          
+        </div>
+      
+        <div class="">
+          <div class="menuRow menuTrigger" data-config="lo_hdr9_srch" data-component-init="AdobeLinkTracker" aria-expanded="false">Search</div>
+          
+            <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
+              
+                <li class="menuRow ">
+                  <a href="/search/" class="submenu-link" data-config="lo_hdr9_srch:records" data-test="records" data-component-init="AdobeLinkTracker">Records</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/tree/find/name" class="submenu-link" data-config="lo_hdr9_srch:findInFamilyTree" data-test="findInFamilyTree" data-component-init="AdobeLinkTracker">Family Tree</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/search/family-trees" class="submenu-link" data-config="lo_hdr9_srch:genealogies" data-test="genealogies" data-component-init="AdobeLinkTracker">Genealogies</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/search/catalog" class="submenu-link" data-config="lo_hdr9_srch:catalog" data-test="catalog" data-component-init="AdobeLinkTracker">Catalog</a>
+                </li>
+              
+                <li class="menuRow books">
+                  <a href="https://www.familysearch.org/library/books/" class="submenu-link" data-config="lo_hdr9_srch:books" data-test="books" data-component-init="AdobeLinkTracker">Books</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/wiki/en/Main_Page" class="submenu-link" data-config="lo_hdr9_srch:wiki" data-test="wiki" data-component-init="AdobeLinkTracker">Research Wiki</a>
+                </li>
+              
+            </ul>
+          
+        </div>
+      
+        <div class="">
+          <div class="menuRow menuTrigger" data-config="lo_hdr9_photos" data-component-init="AdobeLinkTracker" aria-expanded="false">Memories</div>
+          
+            <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
+              
+                <li class="menuRow ">
+                  <a href="/photos/" class="submenu-link" data-config="lo_hdr9_photos:overview" data-test="overview" data-component-init="AdobeLinkTracker">Overview</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/photos/gallery" class="submenu-link" data-config="lo_hdr9_photos:gallery" data-test="gallery" data-component-init="AdobeLinkTracker">Gallery</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/photos/people" class="submenu-link" data-config="lo_hdr9_photos:people" data-test="people" data-component-init="AdobeLinkTracker">People</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/photos/find" class="submenu-link" data-config="lo_hdr9_photos:find" data-test="find" data-component-init="AdobeLinkTracker">Find</a>
+                </li>
+              
+            </ul>
+          
+        </div>
+      
+        <div class="">
+          <div class="menuRow menuTrigger" data-config="lo_hdr9_indexing" data-component-init="AdobeLinkTracker" aria-expanded="false">Indexing</div>
+          
+            <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
+              
+                <li class="menuRow ">
+                  <a href="/indexing/" class="submenu-link" data-config="lo_hdr9_indexing:overview" data-test="overview" data-component-init="AdobeLinkTracker">Overview</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/indexing/my-indexing" class="submenu-link" data-config="lo_hdr9_indexing:web_indexing" data-test="web_indexing" data-component-init="AdobeLinkTracker">Web Indexing</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/indexing/projects" class="submenu-link" data-config="lo_hdr9_indexing:find_a_project" data-test="find_a_project" data-component-init="AdobeLinkTracker">Find a Project</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/indexing/help" class="submenu-link" data-config="lo_hdr9_indexing:get_help" data-test="get_help" data-component-init="AdobeLinkTracker">Help Resources</a>
+                </li>
+              
+            </ul>
+          
+        </div>
+      
+        <div class="">
+          <div class="menuRow menuTrigger" data-config="lo_hdr9_activities" data-component-init="AdobeLinkTracker" aria-expanded="true">Activities</div>
+          
+            <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
+              
+                <li class="menuRow ">
+                  <a href="/discovery/about" class="submenu-link" data-config="lo_hdr9_activities:allAboutMe" data-test="allAboutMe" data-component-init="AdobeLinkTracker">All About Me</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/discovery/compare" class="submenu-link" data-config="lo_hdr9_activities:compareAFace" data-test="compareAFace" data-component-init="AdobeLinkTracker">Compare-a-Face</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/discovery/record" class="submenu-link" data-config="lo_hdr9_activities:recordMyStory" data-test="recordMyStory" data-component-init="AdobeLinkTracker">Record My Story</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/discovery/picture" class="submenu-link" data-config="lo_hdr9_activities:pictureMyHeritage" data-test="pictureMyHeritage" data-component-init="AdobeLinkTracker">Picture My Heritage</a>
+                </li>
+              
+                <li class="menuRow ">
+                  <a href="/discovery/activities/" class="submenu-link" data-config="lo_hdr9_activities:inHomeActivities" data-test="inHomeActivities" data-component-init="AdobeLinkTracker">In-Home Activities</a>
+                </li>
+              
+            </ul>
+          
+        </div>
+      
+    </div>
+  </div>
+</header>
+<header id="main-header" data-height-onload="74" data-view-service="header" style="display:none;">
 	<div class="container clearfix et_menu_container">
 		<div id="primary-navigation">
          <!-- FamilySearch Logo at the top-left of the page -->
