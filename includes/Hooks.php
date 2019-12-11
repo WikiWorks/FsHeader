@@ -39,9 +39,10 @@ class Hooks {
 
 		// modify the login links
 		if ( $wgUser->isLoggedIn() ) {
-			$out->addInlineStyle('#menu-item-38439 {display:none !important;}');
-			$out->addInlineStyle('#menu-item-38440 {display:none !important;}');
-			$out->addInlineStyle('#logout-link {display:block !important;}');
+			$out->addInlineStyle('#signinLink {display:none !important;}');
+			$out->addInlineStyle('#registerLink {display:none !important;}');
+			$out->addInlineStyle('#messagesLink {display:block !important;}');
+			$out->addInlineStyle('#logoutLink {display:block !important;}');
 		}
 		return true;
 	}
