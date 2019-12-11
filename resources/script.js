@@ -66,8 +66,6 @@ $(document).ready(function(e) {
 	searchInput.style.fontSize = "large";
 	/** end search replacement */
 
-	var mobile_menus = $(".mobile-nav .menu-item-has-children .sub-menu").hide();
-
 	//on page resize re-calculate the left padding on the nav menu
 	jQuery(window).on("load resize", function () {
 
@@ -77,32 +75,8 @@ $(document).ready(function(e) {
 		jQuery("#et-top-navigation").css("padding-left", logo_width + "px !important");
 	});
 
-	jQuery(".mobile-nav").on("click", "#top-menu > .menu-item-has-children > a", function(e) {
 
-		e.stopPropagation();
-		e.preventDefault();
-		//hide all the mobile menus
-		mobile_menus.slideUp();
-		var parent_element = jQuery(this).parent();
 
-		if(jQuery(parent_element).hasClass("expand")) {
-				jQuery(parent_element).removeClass("expand");
-		} else {
-				jQuery(".menu-item-has-children").removeClass("expand");
-				jQuery(parent_element).addClass("expand");
-				jQuery(parent_element).find(".sub-menu").slideDown();
-				return false;
-		}
-	});
-
-	jQuery(".mobile-menu-bar-toggle").on("click", function (e) {
-		e.stopPropagation();
-		e.preventDefault();
-		jQuery(".mobile-nav").toggleClass("closed");
-		jQuery(".mobile-nav").toggleClass("opened");
-		console.log("mobile-menu-open");
-		jQuery("html").toggleClass("mobile-menu-open");
-	});
 
 	//sticky footer
 	function sticky_footer() {
@@ -124,51 +98,8 @@ $(document).ready(function(e) {
 		jQuery(selector).css('min-height', ch);
 	}
 
-
-	//if there is a click on 'body' while the mobile menu is opened close it
-	jQuery("html").on("click", "body", function () {
-		if ($("html").hasClass("mobile-menu-open")) {
-			jQuery("html").removeClass("mobile-menu-open");
-		}
-	});
-
-
 });
 
-
-// We use this function to determine the current wiki based on path
-// parseUri 1.2.2
-// (c) Steven Levithan <stevenlevithan.com>
-// MIT License
-
-function parseUri (str) {
-	var	o   = parseUri.options,
-		m   = o.parser[o.strictMode ? "strict" : "loose"].exec(str),
-		uri = {},
-		i   = 14;
-
-	while (i--) uri[o.key[i]] = m[i] || "";
-
-	uri[o.q.name] = {};
-	uri[o.key[12]].replace(o.q.parser, function ($0, $1, $2) {
-		if ($1) uri[o.q.name][$1] = $2;
-	});
-
-	return uri;
-};
-
-parseUri.options = {
-	strictMode: false,
-	key: ["source","protocol","authority","userInfo","user","password","host","port","relative","path","directory","file","query","anchor"],
-	q:   {
-		name:   "queryKey",
-		parser: /(?:^|&)([^&=]*)=?([^&]*)/g
-	},
-	parser: {
-		strict: /^(?:([^:\/?#]+):)?(?:\/\/((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?))?((((?:[^?#\/]*\/)*)([^?#]*))(?:\?([^#]*))?(?:#(.*))?)/,
-		loose:  /^(?:(?![^:@]+:[^:@\/]*@)([^:\/?#.]+):)?(?:\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/
-	}
-};
 
 
 
@@ -401,4 +332,3 @@ parseUri.options = {
         })
     }
 }(window, document);
-
