@@ -52,7 +52,7 @@
 			"dependencies": [],
 			"messages": [],
 			"styles": [],
-			"scripts": ["script.js"],
+			"scripts": ["script.js", "usabilla.js"],
 			"targets": ["desktop", "mobile"]
 		}
 	},
