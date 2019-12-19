@@ -421,43 +421,6 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
     </div>
   </div>
 </header>
-
-               <!-- div class="menu-header-links-bottom-container">
-                  <ul id="menu-header-links-bottom" class="menu">
-                    
-                     <li id="menu-item-38439"
-                        class="header-right-link menu-item menu-item-type-custom menu-item-object-custom menu-item-38439"
-                        style="float:left; font-size:16px; color:#666662;">
-                        <a href="/wiki/<?php $t ('header-language');?>/Special:UserLogin?returnto=<?php echo ( preg_replace (['%^/wiki/(de|en|es|fr|it|ja|ko|pt|ru|sv|zh)/%', '%\?.*$%'], '', $_SERVER['REQUEST_URI']) );?>"><?php $t ('header-signin');?></a>
-                     </li>
-                    
-                     <li id="menu-item-38440"
-                        class="header-right-button menu-item menu-item-type-custom menu-item-object-custom menu-item-38440"
-                        style="float:right; padding:10px;">
-                        <a href="https://www.familysearch.org/register/"><?php $t ('header-freeaccount');?></a>
-                     </li>
-                    
-                     <li id="logout-link" style="display:none; float:left; font-size:1rem; color:#666662;" class="header-right-link menu-item menu-item-type-custom menu-item-object-custom">
-                        <a href="/wiki/<?php $t ('header-language');?>/Special:UserLogout?returnto=<?php echo ( preg_replace (['%^/wiki/(de|en|es|fr|it|ja|ko|pt|ru|sv|zh)/%', '%\?.*$%' ], '', $_SERVER['REQUEST_URI']) );?>" class="user-submenu-link" data-test="NavigationLogOut" data-component="AdobeLinkTracker" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;li_hdr_signout&quot;}">
-                     <?php $t ('header-signout');?>
-                           </a>
-                     </li>
-                  </ul>
-               </div> end Sign In and Free Account section of header code -->
-
-
-			<!-- Mobile view menu, under the MORE Hamburger menu.-->
-
-					<?php if ( $wgUser->mId == 0 ) { ?>
-					<!-- div class="mobile-account ">
-
-					 <a href="/auth/familysearch/login?fhf=true" class="mobile-account-first fs-button fs-button--small fs-button--recommended" data-config="lo_hdr_login" data-component-init="AdobeLinkTracker"><?php $t ('header-signin');?></a>
-
-					 <a href="/register/" class="mobile-account-last fs-button fs-button--small" data-config="lo_hdr_register" data-component-init="AdobeLinkTracker"><?php $t ('header-freeaccount');?></a>
-
-	   				</div -->
-					<?php } ?>
-
 <?php
 // Show the Temple Menu
 $sessionId = getSessionIdFromCookie();
