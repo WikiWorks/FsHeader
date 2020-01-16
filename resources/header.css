@@ -1426,6 +1426,7 @@ main {
 
 #header2019 .nav-menu-parent {
 	position: relative;
+	width: 55px;
 }
 
 #header2019 .primary-nav-item {
@@ -1442,6 +1443,7 @@ main {
 
 #header2019 #helpLink img,#header2019 #messagesLink img,#header2019 #userMenuLink img {
 	margin-right: 7px;
+	width:20px;
 }
 
 #header2019 #messagesLink {
@@ -1535,6 +1537,7 @@ main {
 
 #header2019 #hamburgerLink {
 	display: none;
+	width:40px;
 }
 
 #header2019 .admin-role-link {
