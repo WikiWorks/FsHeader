@@ -35,35 +35,18 @@ $(document).ready(function(e) {
 	if ( f != null ) {
 		f.appendChild(ff);
 	}
-
-	var h = document.getElementById('main-header');
-	// mw-page-base is only found in desktop view
-	var a = document.getElementById('mw-page-base');
-	var isMobile = false;
-	var isApi = false;
-	if ( a == null ) {
-		// mobile insertion point
-		a = document.getElementById('mw-mf-viewport');
-		isMobile = true;
-		if ( a == null ) {
-			isMobile = false;
-			isApi = true;
-		}
-	}
-	if ( isMobile ) {
-		a.insertBefore(h, a.firstChild);
-		console.log ('moved header for mobile');
-	}
 	///////////// end mobile footer placement ///////////////////////
 
-	/** Begin search replacement for Main Page */
-	var searchBad = document.getElementById('bodySearchHomePageSearchBox');
-	var searchForm = document.getElementById('searchform');
-	var dupNode = searchForm.cloneNode(true);
-	searchBad.parentNode.replaceChild(dupNode,searchBad);
-	// searchBad.parentNode.replaceChild(searchForm,searchBad);
-	var searchInput = document.getElementById('searchInput');
-	searchInput.style.fontSize = "large";
+    /** Begin search replacement for Main Page */
+    if (/Main_Page/.test(document.location.href) && document.getElementById('searchform')) {
+        var searchBad = document.getElementById('bodySearchHomePageSearchBox');
+        var searchForm = document.getElementById('searchform');
+        var dupNode = searchForm.cloneNode(true);
+        searchBad.parentNode.replaceChild(dupNode,searchBad);
+        // searchBad.parentNode.replaceChild(searchForm,searchBad);
+        var searchInput = document.getElementById('searchInput');
+        searchInput.style.fontSize = "large";
+    }
 	/** end search replacement */
 
 	//on page resize re-calculate the left padding on the nav menu
@@ -201,14 +184,6 @@ $(document).ready(function(e) {
         }
         Array.prototype.forEach.call(i, function(e) {
             e.addEventListener("click", o)
-        })
-        FS.User.getCurrentUserPortraitUrl().then(function(e) {
-            if (e) {
-                const n = t.createElement("img");
-                n.classList.add("user-icon"),
-                n.src = e,
-                t.querySelector("#liAccount .user-icon").replaceWith(n)
-            }
         })
     }(),
     function() {
