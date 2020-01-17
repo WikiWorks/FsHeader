@@ -1426,7 +1426,7 @@ main {
 
 #header2019 .nav-menu-parent {
 	position: relative;
-	width: 55px;
+	/* width: 55px; */
 }
 
 #header2019 .primary-nav-item {
