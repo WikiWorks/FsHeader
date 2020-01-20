@@ -37,17 +37,28 @@ $(document).ready(function(e) {
 	}
 	///////////// end mobile footer placement ///////////////////////
 
+    
     /** Begin search replacement for Main Page */
     if (/Main_Page/.test(document.location.href) && document.getElementById('searchform')) {
         var searchBad = document.getElementById('bodySearchHomePageSearchBox');
         var searchForm = document.getElementById('searchform');
         var dupNode = searchForm.cloneNode(true);
+        dupNode.id = "searchform2";
         searchBad.parentNode.replaceChild(dupNode,searchBad);
         // searchBad.parentNode.replaceChild(searchForm,searchBad);
         var searchInput = document.getElementById('searchInput');
         searchInput.style.fontSize = "large";
-    }
-	/** end search replacement */
+
+        // explicitly remove the full-text search button for JS enabled browsers
+        // jQuery('#mw-searchButton').detach();
+        function removebadGuy() {
+            var badGuy = document.querySelector( '.mw-fallbackSearchButton' );
+            if ( badGuy != null ) { badGuy.remove(); }
+        }
+        var improvedForm;
+        improvedForm = setTimeout( removebadGuy, 1000 );
+    }    
+    /** end search replacement */
 
 	//on page resize re-calculate the left padding on the nav menu
 	jQuery(window).on("load resize", function () {
@@ -55,8 +66,10 @@ $(document).ready(function(e) {
 		sticky_footer();
 		//find the width of the logo container and use that to left pad the nav menu
 		var logo_width = 10 + jQuery(".logo_container:first").width();
-		jQuery("#et-top-navigation").css("padding-left", logo_width + "px !important");
-	});
+        jQuery("#et-top-navigation").css("padding-left", logo_width + "px !important");
+
+
+    });
 
 
 
