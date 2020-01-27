@@ -556,30 +556,22 @@ html.museo-loaded {
 
 h1,.fs-h1 {
 	font-size: 2.143rem;
-	letter-spacing: 0.06rem;
-	/* [1] */
 	line-height: 2.5rem;
 }
 
 h2,.fs-h2 {
 	font-size: 1.857rem;
-	letter-spacing: 0.05rem;
-	/* [1] */
 	line-height: 2.22rem;
 }
 
 h3,.fs-h3 {
 	font-size: 1.571rem;
-	letter-spacing: 0.04rem;
-	/* [1] */
 	line-height: 1.95rem;
 	margin: 0 0 0.203125rem 0;
 }
 
 h4,.fs-h4 {
 	font-size: 1.286rem;
-	letter-spacing: 0.04rem;
-	/* [1] */
 	line-height: 1.625rem;
 }
 
