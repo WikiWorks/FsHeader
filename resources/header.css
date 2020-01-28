@@ -598,13 +598,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-a,a:hover,a:active,a:focus {
-	color: #0060d7;
-}
-
-a:visited {
-	color: #b3467c;
-}
 
 button {
 	font-family: Verdana,Ayuthaya,'HanaMinBFont',sans-serif;
