@@ -471,6 +471,7 @@ html .mobile-menu-open body {
 
 #mw-panel .portal {
 	padding: unset;
+	font-size: 1.1rem;
 }
 
 #mw-panel .portal .body {
@@ -1431,7 +1432,7 @@ main {
 }
 
 #header2019 #helpLink img,#header2019 #messagesLink img,#header2019 #userMenuLink img {
-	margin-right: 7px;
+	margin: 8px;
 	width:20px;
 }
 
@@ -1547,10 +1548,6 @@ main {
 		display: none;
 	}
 
-	#header2019:not(:lang(ru)) #helpLink img,#header2019:not(:lang(ru)) #messagesLink img {
-		margin-right: 0px;
-	}
-
 	#header2019:not(:lang(ru)) .top #userMenuLink,#header2019:not(:lang(ru)) .top #signInLink,#header2019:not(:lang(ru)) .top #registerLink {
 		display: none;
 	}
@@ -1560,7 +1557,7 @@ main {
 	}
 
 	#header2019:not(:lang(ru)) #hamburgerLink img {
-		margin-bottom: 3px;
+		margin: 8px;
 	}
 }
 
