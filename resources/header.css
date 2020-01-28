@@ -715,6 +715,10 @@ select:focus {
 	outline: none;
 }
 
+input[type="checkbox"] {
+	display:none;
+}
+
 input[type="checkbox"][id] + label,input[type="radio"][id] + label {
 	font-size: 1rem;
 	margin: 0;
