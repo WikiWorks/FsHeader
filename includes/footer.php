@@ -8,16 +8,20 @@
 				<ul id="menu-footer-menu" class="menu" style="margin:0!important;">
 					<!-- About -->
 					<li id="menu-item-39483" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39483">
-						<a href="https://www.familysearch.org/home/about"><?php $t ('footer-about');?></a>
+						<a href="/home/about"><?php $t ('footer-about');?></a>
+					</li>
+					<!-- Volunteer -->
+					<li id="menu-item-39482" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39482">
+						<a href="/help/volunteer"><?php $t ('header-volunteer');?></a>
 					</li>
 					<!-- Blog -->
 					<li id="menu-item-39484"
 						class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-39484">
-						<a href="https://familysearch.org/blog/<?php $t ('header-language');?>"><?php $t ('footer-blog');?></a>
+						<a href="/blog/<?php $t ('header-language');?>"><?php $t ('footer-blog');?></a>
 					</li>
 					<!-- Site Map -->
 					<li id="menu-item-39485" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39485">
-						<a href="https://www.familysearch.org/site-map"><?php $t ('footer-sitemap');?></a>
+						<a href="/site-map"><?php $t ('footer-sitemap');?></a>
 					</li>
 					<!-- Solutions Gallery -->
 					<li id="menu-item-39486" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39486">
@@ -40,8 +44,8 @@
 		<div class="copyright-notice">
 			<!-- Create FamilySearch Terms of Use (Updated 'date') | Privacy Notice (Updated 'date') -->
 			<div class="privacy_usage">
-				<a href="https://www.familysearch.org/terms" data-test="footer-rights-of-use" data-component="AdobeLinkTracker"
-					data-config="ftr_rights"><?php $t ('footer-termsofuse');?></a> <?php $t ('footer-termsupdated');?>&nbsp;|&nbsp;<a href="https://www.familysearch.org/privacy" data-test="footer-privacy_policy"
+				<a href="/terms" data-test="footer-rights-of-use" data-component="AdobeLinkTracker"
+					data-config="ftr_rights"><?php $t ('footer-termsofuse');?></a> <?php $t ('footer-termsupdated');?>&nbsp;|&nbsp;<a href="/privacy" data-test="footer-privacy_policy"
 					data-component="AdobeLinkTracker" data-config="ftr_privacy"><?php $t ('footer-privacynotice');?>
 				</a> <?php $t ('footer-privacyupdated');?>
 			</div>
