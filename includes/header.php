@@ -98,10 +98,10 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
       <nav id="primaryNav">
         
         <div class="primary-nav-item nav-menu-parent ">
-          <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_tree" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-tree');?></button>
+          <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_tree" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-familytree');?></button>
           <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu" style="">
             <li class="submenu-item">
-              <a href="/tree/pedigree" class="submenu-link" data-config="lo_hdr9_tree:pedigree" data-test="pedigree" data-component-init="AdobeLinkTracker"><?php $t ('header-tree');?></a>
+              <a href="/tree/pedigree" class="submenu-link" data-config="lo_hdr9_tree:pedigree" data-test="pedigree" data-component-init="AdobeLinkTracker"><?php $t ('header-familytree');?></a>
             </li>
             <li class="submenu-item">
               <a href="/tree/person" class="submenu-link" data-config="lo_hdr9_tree:person" data-test="person" data-component-init="AdobeLinkTracker"><?php $t ('header-person');?></a>
@@ -122,7 +122,7 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
               <a href="/search/" class="submenu-link" data-config="lo_hdr9_srch:records" data-test="records" data-component-init="AdobeLinkTracker"><?php $t ('header-records');?></a>
             </li>
             <li class="submenu-item">
-              <a href="/tree/find/name" class="submenu-link" data-config="lo_hdr9_srch:findInFamilyTree" data-test="findInFamilyTree" data-component-init="AdobeLinkTracker"><?php $t ('header-tree');?></a>
+              <a href="/tree/find/name" class="submenu-link" data-config="lo_hdr9_srch:findInFamilyTree" data-test="findInFamilyTree" data-component-init="AdobeLinkTracker"><?php $t ('header-familytree');?></a>
             </li>
             <li class="submenu-item">
               <a href="/search/family-trees" class="submenu-link" data-config="lo_hdr9_srch:genealogies" data-test="genealogies" data-component-init="AdobeLinkTracker"><?php $t ('header-genealogies');?></a>
@@ -284,10 +284,10 @@ if ($showTempleMenu) {
       </div>
       
       <div class="">
-        <div class="menuRow menuTrigger" data-config="lo_hdr9_tree" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-tree');?></div>
+        <div class="menuRow menuTrigger" data-config="lo_hdr9_tree" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-familytree');?></div>
         <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
           <li class="menuRow">
-            <a href="/tree/pedigree" class="submenu-link" data-config="lo_hdr9_tree:pedigree" data-test="pedigree" data-component-init="AdobeLinkTracker"><?php $t ('header-tree');?></a>
+            <a href="/tree/pedigree" class="submenu-link" data-config="lo_hdr9_tree:pedigree" data-test="pedigree" data-component-init="AdobeLinkTracker"><?php $t ('header-familytree');?></a>
           </li>
           <li class="menuRow">
             <a href="/tree/person" class="submenu-link" data-config="lo_hdr9_tree:person" data-test="person" data-component-init="AdobeLinkTracker"><?php $t ('header-person');?></a>
@@ -308,7 +308,7 @@ if ($showTempleMenu) {
             <a href="/search/" class="submenu-link" data-config="lo_hdr9_srch:records" data-test="records" data-component-init="AdobeLinkTracker"><?php $t ('header-records');?></a>
           </li>
           <li class="menuRow">
-            <a href="/tree/find/name" class="submenu-link" data-config="lo_hdr9_srch:findInFamilyTree" data-test="findInFamilyTree" data-component-init="AdobeLinkTracker"><?php $t ('header-tree');?></a>
+            <a href="/tree/find/name" class="submenu-link" data-config="lo_hdr9_srch:findInFamilyTree" data-test="findInFamilyTree" data-component-init="AdobeLinkTracker"><?php $t ('header-familytree');?></a>
           </li>
           <li class="menuRow">
             <a href="/search/family-trees" class="submenu-link" data-config="lo_hdr9_srch:genealogies" data-test="genealogies" data-component-init="AdobeLinkTracker"><?php $t ('header-genealogies');?></a>
