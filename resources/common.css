@@ -453,6 +453,11 @@ div#mw-panel div.portal div.body ul li a {
 
 div#mw-panel div.portal h3 {
     font-family: Helvetica, Verdana, san-serif;
+    font-size: 0.875em;
+}
+
+.vectorTabs li {
+    font-size:.875em;
 }
 
 /** Entries to counter wiki css code for TOC */

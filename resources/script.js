@@ -47,7 +47,7 @@ $(document).ready(function(e) {
         searchBad.parentNode.replaceChild(dupNode,searchBad);
         // searchBad.parentNode.replaceChild(searchForm,searchBad);
         var searchInput = document.getElementById('searchInput');
-        searchInput.style.fontSize = "large";
+        searchInput.style.fontSize = "medium";
 
         // explicitly remove the full-text search button for JS enabled browsers
         // jQuery('#mw-searchButton').detach();
