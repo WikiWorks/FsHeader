@@ -225,14 +225,14 @@ input[type=tel], input[type=color], input[type=password], input[type=datetime], 
 /** Vector sets a list-style-image so we have to set it to none in order
  * to make our discs black */
 
-/*
+
 ul li {
 	line-height: 1.25rem;
 	font-size: 1rem;
 	color: black!important;
 	list-style-image:none;
 }
-*/
+
 ol li {
 	line-height: 1.25rem;
 }
