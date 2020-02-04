@@ -78,10 +78,6 @@ fieldset ul li {
 
 /**** 2. Class selectors .foo, attributes selectors [type=“radio”], pseudo-classes :hover */
 
-.mw-references-wrap {
-   word-break: break-all;
-}
-
 /**** Location button ********************************************************/
 
 .online_records_button {
