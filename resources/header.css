@@ -1279,6 +1279,10 @@ main {
 	padding: 5px;
 }
 
+#primaryNav, #secondaryNav {
+	background-color:  white;
+}
+
 #header2019 #secondaryNav {
 	display: -webkit-flex;
 	display: flex;
