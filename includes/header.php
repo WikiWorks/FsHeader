@@ -257,10 +257,10 @@ if ($showTempleMenu) {
          <a href="/messaging/mailbox" id="messagesLink" style="display:none;" target="_blank" data-test="header-nav-messages" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;li_hdr9_msgs&quot;}" data-component-init="AdobeLinkTracker">
             <img src="https://edge.fscdn.org/assets/components/hf/assets/img/icons/header-messages-f81399c87551f2691dd276a77bc31216.svg">
             <span class="unread-message-badge"></span>
-            <span class="nav-trigger-text">Messages</span>
+            <span class="nav-trigger-text"><?php $t ('header-messages');?></span>
          </a>  
          <a class="highlight" id="signinLink" href="/wiki/<?php $t ('header-language');?>/Special:UserLogin?returnto=<?php echo ( preg_replace (['%^/wiki/(de|en|es|fr|it|ja|ko|pt|ru|sv|zh)/%', '%\?.*$%'], '', $_SERVER['REQUEST_URI']) );?>"><?php $t ('header-signin');?></a>
-         <a href="/register/" id="registerLink" class="highlight border" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_register&quot;}" data-component-init="AdobeLinkTracker">Create Account</a>
+         <a href="/register/" id="registerLink" class="highlight border" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_register&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-createaccount');?></a>
          
          <a id="logoutLink" style="display:none; float:left;" class="highlight" href="/wiki/<?php $t ('header-language');?>/Special:UserLogout?returnto=<?php echo ( preg_replace (['%^/wiki/(de|en|es|fr|it|ja|ko|pt|ru|sv|zh)/%', '%\?.*$%' ], '', $_SERVER['REQUEST_URI']) );?>" class="user-submenu-link" data-test="NavigationLogOut" data-component="AdobeLinkTracker" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;li_hdr_signout&quot;}"><?php $t ('header-signout');?></a>
         
@@ -280,7 +280,7 @@ if ($showTempleMenu) {
       </button>
       <div id="loAccount">
         <a class="highlight" id="signinLink" href="/wiki/<?php $t ('header-language');?>/Special:UserLogin?returnto=<?php echo ( preg_replace (['%^/wiki/(de|en|es|fr|it|ja|ko|pt|ru|sv|zh)/%', '%\?.*$%'], '', $_SERVER['REQUEST_URI']) );?>"><?php $t ('header-signin');?></a>
-        <a href="/register/" id="registerLink" class="highlight border" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_register&quot;}" data-component-init="AdobeLinkTracker">Create Account</a>    
+        <a href="/register/" id="registerLink" class="highlight border" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_register&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-createaccount');?></a>    
       </div>
       
       <div class="">
