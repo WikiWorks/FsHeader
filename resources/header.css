@@ -222,6 +222,14 @@ input[type=tel], input[type=color], input[type=password], input[type=datetime], 
 */
 /**** Lists ******************************************************************/
 
+/** make the Table of Contents a bit smaller */
+#toc li {
+	font-size: .9rem;
+}
+
+#bodyContent ol li {
+	line-height: 1.5rem;
+}
 /** Vector sets a list-style-image so we have to set it to none in order
  * to make our discs black */
 
@@ -474,7 +482,7 @@ html .mobile-menu-open body {
 /** 20190324 - fixes gap between tabs and main body. */
 
 #mw-navigation #mw-head {
-	top: 67px;
+	top: 59px;
 	z-index: 0 !important;
 	/* fixes see-through dropdown menus */
 }
@@ -1208,6 +1216,7 @@ main {
 	display: block;
 	width: 132px;
 	height: 33.8px;
+	margin-top: -10px;
 }
 
 #header2019 .logo.beta {
@@ -1219,6 +1228,7 @@ main {
 	#header2019 .logo {
 		background:url("https://edge.fscdn.org/assets/components/hf/assets/img/logos/tree-logotype-2x-750ccbd315132e50d07ad40c8e639a34.png") no-repeat transparent;
 		background-size: contain;
+		margin-top: -50px;
 	}
 }
 
