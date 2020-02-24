@@ -176,22 +176,25 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
         </div>
         
         <div class="primary-nav-item nav-menu-parent ">
-          <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_activities" data-component-init="AdobeLinkTracker" aria-expanded="false">Activities</button>
+          <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_activities" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-activities');?></button>
           <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu" style="">
             <li class="submenu-item">
-              <a href="/discovery/about" class="submenu-link" data-config="lo_hdr9_activities:allAboutMe" data-test="allAboutMe" data-component-init="AdobeLinkTracker">All About Me</a>
+              <a href="/discovery/" class="submenu-link" data-config="lo_hdr9_activities:allActivities" data-test="allActivities" data-component-init="AdobeLinkTracker"><?php $t ('header-allactivities');?></a>
             </li>
             <li class="submenu-item">
-              <a href="/discovery/compare" class="submenu-link" data-config="lo_hdr9_activities:compareAFace" data-test="compareAFace" data-component-init="AdobeLinkTracker">Compare-a-Face</a>
+              <a href="/discovery/about" class="submenu-link" data-config="lo_hdr9_activities:allAboutMe" data-test="allAboutMe" data-component-init="AdobeLinkTracker"><?php $t ('header-allaboutme');?></a>
             </li>
             <li class="submenu-item">
-              <a href="/discovery/record" class="submenu-link" data-config="lo_hdr9_activities:recordMyStory" data-test="recordMyStory" data-component-init="AdobeLinkTracker">Record My Story</a>
+              <a href="/discovery/compare" class="submenu-link" data-config="lo_hdr9_activities:compareAFace" data-test="compareAFace" data-component-init="AdobeLinkTracker"><?php $t ('header-compareaface');?></a>
             </li>
             <li class="submenu-item">
-              <a href="/discovery/picture" class="submenu-link" data-config="lo_hdr9_activities:pictureMyHeritage" data-test="pictureMyHeritage" data-component-init="AdobeLinkTracker">Picture My Heritage</a>
+              <a href="/discovery/record" class="submenu-link" data-config="lo_hdr9_activities:recordMyStory" data-test="recordMyStory" data-component-init="AdobeLinkTracker"><?php $t ('header-recordmystory');?></a>
             </li>
             <li class="submenu-item">
-              <a href="/discovery/activities/" class="submenu-link" data-config="lo_hdr9_activities:inHomeActivities" data-test="inHomeActivities" data-component-init="AdobeLinkTracker">In-Home Activities</a>
+              <a href="/discovery/picture" class="submenu-link" data-config="lo_hdr9_activities:pictureMyHeritage" data-test="pictureMyHeritage" data-component-init="AdobeLinkTracker"><?php $t ('header-picturemyheritage');?></a>
+            </li>
+            <li class="submenu-item">
+              <a href="/discovery/activities/" class="submenu-link" data-config="lo_hdr9_activities:inHomeActivities" data-test="inHomeActivities" data-component-init="AdobeLinkTracker"><?php $t ('header-inhomeactivities');?></a>
             </li>
           </ul>
         </div>
@@ -362,22 +365,25 @@ if ($showTempleMenu) {
       </div>
       
       <div class="">
-        <div class="menuRow menuTrigger" data-config="lo_hdr9_activities" data-component-init="AdobeLinkTracker" aria-expanded="false">Activities</div>
+        <div class="menuRow menuTrigger" data-config="lo_hdr9_activities" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-activities');?></div>
         <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
-          <li class="menuRow">
-            <a href="/discovery/about" class="submenu-link" data-config="lo_hdr9_activities:allAboutMe" data-test="allAboutMe" data-component-init="AdobeLinkTracker">All About Me</a>
+        <li class="menuRow">
+            <a href="/discovery/" class="submenu-link" data-config="lo_hdr9_activities:allActivities" data-test="allActivities" data-component-init="AdobeLinkTracker"><?php $t ('header-allactivities');?></a>
           </li>
           <li class="menuRow">
-            <a href="/discovery/compare" class="submenu-link" data-config="lo_hdr9_activities:compareAFace" data-test="compareAFace" data-component-init="AdobeLinkTracker">Compare-a-Face</a>
+            <a href="/discovery/about" class="submenu-link" data-config="lo_hdr9_activities:allAboutMe" data-test="allAboutMe" data-component-init="AdobeLinkTracker"><?php $t ('header-allaboutme');?></a>
           </li>
           <li class="menuRow">
-            <a href="/discovery/record" class="submenu-link" data-config="lo_hdr9_activities:recordMyStory" data-test="recordMyStory" data-component-init="AdobeLinkTracker">Record My Story</a>
+            <a href="/discovery/compare" class="submenu-link" data-config="lo_hdr9_activities:compareAFace" data-test="compareAFace" data-component-init="AdobeLinkTracker"><?php $t ('header-compareaface');?></a>
           </li>
           <li class="menuRow">
-            <a href="/discovery/picture" class="submenu-link" data-config="lo_hdr9_activities:pictureMyHeritage" data-test="pictureMyHeritage" data-component-init="AdobeLinkTracker">Picture My Heritage</a>
+            <a href="/discovery/record" class="submenu-link" data-config="lo_hdr9_activities:recordMyStory" data-test="recordMyStory" data-component-init="AdobeLinkTracker"><?php $t ('header-recordmystory');?></a>
           </li>
           <li class="menuRow">
-            <a href="/discovery/activities/" class="submenu-link" data-config="lo_hdr9_activities:inHomeActivities" data-test="inHomeActivities" data-component-init="AdobeLinkTracker">In-Home Activities</a>
+            <a href="/discovery/picture" class="submenu-link" data-config="lo_hdr9_activities:pictureMyHeritage" data-test="pictureMyHeritage" data-component-init="AdobeLinkTracker"><?php $t ('header-picturemyheritage');?></a>
+          </li>
+          <li class="menuRow">
+            <a href="/discovery/activities/" class="submenu-link" data-config="lo_hdr9_activities:inHomeActivities" data-test="inHomeActivities" data-component-init="AdobeLinkTracker"><?php $t ('header-inhomeactivities');?></a>
           </li>
         </ul>
       </div>
