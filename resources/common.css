@@ -81,13 +81,14 @@ fieldset ul li {
 /**** Location button ********************************************************/
 
 .online_records_button {
-    background-color: #27c4f4;
+    background-color: #3073dd;
     border-radius: 10px;
     color: white;
     width: 210px;
     text-align: center;
+    text-decoration: none;
     font-size: 1.2em;
-    margin-right: 2px;
+    margin-right: 5px;
 }
 
 .online_records_button:hover, .online_records_button:visited {
@@ -101,20 +102,31 @@ fieldset ul li {
 }
 
 /**** community button *******************************************************/
-
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 .community_button {
     background-color: #996799;
     border-radius: 10px;
     color: white;
     width: 210px;
     text-align: center;
+    text-decoration: none;
     font-size: 1.2em;
-    margin-right: 2px;
+    margin-right: 5px;
 }
 
-.community_button:hover, .community_button:visited {
+#fsButtons a:hover, #fsButtons a:visited {
     text-decoration: none !important;
-    background-color: #a85882;
 }
 
 .community_button>a, .community_button>a.visited, .community_button>a.external:visited, .community_button>a:hover {

@@ -114,30 +114,30 @@ html, body {
 
 h3, h4, h5, h6 {
 	border-bottom: none;
-	color: #333;
+	color: #000;
 }
 
 /** we have to use the class selector so that Vector doesn't override us */
 
 .mw-body-content h1 {
 	font-size: 1.6rem!important;
-	color: #333;
+	color: #000;
 	margin-top: 0.125em; /* whitespace to sitenotice */
 }
 
 .mw-body-content h2 {
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	line-height: 1.3;
-	color: #333;
+	color: #000;
 }
 
 .mw-body-content h3 {
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	font-weight: bold;
 }
 
 .mw-body-content h4 {
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	font-weight: bold;
 }
 
@@ -570,7 +570,7 @@ body {
 
 /* */
 h1,h2,h3,h4,.fs-h1,.fs-h2,.fs-h3,.fs-h4 {
-	color: #4d4d4a;
+	color: #000;
 	font-family: "museo","Verdana","Ayuthaya","HanaMinBFont",serif;
 	font-weight: normal;
 	margin: 0;
@@ -1228,7 +1228,7 @@ main {
 	#header2019 .logo {
 		background:url("https://edge.fscdn.org/assets/components/hf/assets/img/logos/tree-logotype-2x-750ccbd315132e50d07ad40c8e639a34.png") no-repeat transparent;
 		background-size: contain;
-		margin-top: -50px;
+		/* margin-top: -50px; */
 	}
 }
 
