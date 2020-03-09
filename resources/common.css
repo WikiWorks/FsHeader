@@ -88,8 +88,9 @@ fieldset ul li {
     text-align: center;
     text-decoration: none;
     font-size: 1.1em;
-    margin-right: 5px;
+    margin: 5px;
     padding: 5px;
+    display: block;
 }
 
 .online_records_button:hover, .online_records_button:visited {
@@ -123,8 +124,13 @@ fieldset ul li {
     text-align: center;
     text-decoration: none;
     font-size: 1.1em;
-    margin-right: 5px;
+    margin: 5px;
     padding: 5px;
+    display: block;
+}
+
+#fsButtons {
+   margin: 10px;
 }
 
 #fsButtons a:hover, #fsButtons a:visited {
