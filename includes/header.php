@@ -122,6 +122,9 @@ try{(new g(100,"r","QSI_S_ZN_1YB8u9S54WqyizP","https://zn1yb8u9s54wqyizp-lds.sit
               <a href="/search/" class="submenu-link" data-config="lo_hdr9_srch:records" data-test="records" data-component-init="AdobeLinkTracker"><?php $t ('header-records');?></a>
             </li>
             <li class="submenu-item">
+              <a href="/records/images/" class="submenu-link" data-config="lo_hdr9_srch:images" data-test="images" data-component-init="AdobeLinkTracker"><?php $t ('header-images');?></a>
+            </li>
+            <li class="submenu-item">
               <a href="/tree/find/name" class="submenu-link" data-config="lo_hdr9_srch:findInFamilyTree" data-test="findInFamilyTree" data-component-init="AdobeLinkTracker"><?php $t ('header-familytree');?></a>
             </li>
             <li class="submenu-item">
@@ -309,6 +312,9 @@ if ($showTempleMenu) {
         <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
           <li class="menuRow">
             <a href="/search/" class="submenu-link" data-config="lo_hdr9_srch:records" data-test="records" data-component-init="AdobeLinkTracker"><?php $t ('header-records');?></a>
+          </li>
+          <li class="menuRow">
+            <a href="/records/images/" class="submenu-link" data-config="lo_hdr9_srch:images" data-test="images" data-component-init="AdobeLinkTracker"><?php $t ('header-images');?></a>
           </li>
           <li class="menuRow">
             <a href="/tree/find/name" class="submenu-link" data-config="lo_hdr9_srch:findInFamilyTree" data-test="findInFamilyTree" data-component-init="AdobeLinkTracker"><?php $t ('header-familytree');?></a>
