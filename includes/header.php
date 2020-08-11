@@ -86,10 +86,10 @@ if ( $sessionId ) {
       <nav id="primaryNav">
         
         <div class="primary-nav-item nav-menu-parent ">
-          <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_tree" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-familytree');?></button>
+          <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_tree" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-tree');?></button>
           <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu" style="">
             <li class="submenu-item">
-              <a href="/tree/pedigree" class="submenu-link" data-config="lo_hdr9_tree:pedigree" data-test="pedigree" data-component-init="AdobeLinkTracker"><?php $t ('header-familytree');?></a>
+              <a href="/tree/pedigree" class="submenu-link" data-config="lo_hdr9_tree:pedigree" data-test="pedigree" data-component-init="AdobeLinkTracker"><?php $t ('header-tree');?></a>
             </li>
             <li class="submenu-item">
               <a href="/tree/person" class="submenu-link" data-config="lo_hdr9_tree:person" data-test="person" data-component-init="AdobeLinkTracker"><?php $t ('header-person');?></a>
@@ -290,7 +290,10 @@ if ($showTempleMenu) {
             <a href="/tree/find" class="submenu-link" data-config="lo_hdr9_tree:findinTree" data-test="findinTree" data-component-init="AdobeLinkTracker"><?php $t ('header-find');?></a>
           </li>
           <li class="menuRow">
-            <a href="/tree/list/people" class="submenu-link" data-config="lo_hdr9_tree:lists" data-test="lists" data-component-init="AdobeLinkTracker"><?php $t ('header-lists');?></a>
+            <a href="/tree/following" class="submenu-link" data-config="lo_hdr9_tree:following" data-test="following" data-component-init="AdobeLinkTracker"><?php $t ('header-following');?></a>
+          </li>
+          <li class="menuRow">
+            <a href="/tree/contributions" class="submenu-link" data-config="lo_hdr9_tree:contributions" data-test="contributions" data-component-init="AdobeLinkTracker"><?php $t ('header-contributions');?></a>
           </li>
         </ul>          
       </div>
@@ -361,8 +364,11 @@ if ($showTempleMenu) {
       <div class="">
         <div class="menuRow menuTrigger" data-config="lo_hdr9_activities" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-activities');?></div>
         <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
-        <li class="menuRow">
+          <li class="menuRow">
             <a href="/discovery/" class="submenu-link" data-config="lo_hdr9_activities:allActivities" data-test="allActivities" data-component-init="AdobeLinkTracker"><?php $t ('header-allactivities');?></a>
+          </li>
+          <li class="menuRow">
+            <a href="/discovery/explore/" class="submenu-link" data-config="lo_hdr9_activities:whereAmIFrom" data-test="whereAmIFrom" data-component-init="AdobeLinkTracker"><?php $t ('header-whereamifrom');?></a>
           </li>
           <li class="menuRow">
             <a href="/discovery/about" class="submenu-link" data-config="lo_hdr9_activities:allAboutMe" data-test="allAboutMe" data-component-init="AdobeLinkTracker"><?php $t ('header-allaboutme');?></a>
@@ -392,14 +398,6 @@ if ($showTempleMenu) {
         <li class="menuRow">
           <a href="/temple/all" class="submenu-link" data-component="AdobeLinkTracker"
           data-config="li_hdr9_temple:all" data-test="all"><?php $t ('header-allreserved');?></a>
-        </li>
-        <li class="menuRow">
-          <a href="/temple/reserved" class="submenu-link" data-component="AdobeLinkTracker"
-          data-config="li_hdr9_temple:reserved" data-test="reserved"><?php $t ('header-notprinted');?></a>
-        </li>
-        <li class="menuRow">
-          <a href="/temple/printed" class="submenu-link" data-component="AdobeLinkTracker"
-          data-config="li_hdr9_temple:printed" data-test="printed"><?php $t ('header-printed');?></a>
         </li>
         <li class="menuRow">
           <a href="/temple/shared" class="submenu-link" data-component="AdobeLinkTracker"
