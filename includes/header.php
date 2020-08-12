@@ -86,7 +86,7 @@ if ( $sessionId ) {
       <nav id="primaryNav">
         
         <div class="primary-nav-item nav-menu-parent ">
-          <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_tree" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-tree');?></button>
+          <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_tree" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-familytree');?></button>
           <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu" style="">
             <li class="submenu-item">
               <a href="/tree/pedigree" class="submenu-link" data-config="lo_hdr9_tree:pedigree" data-test="pedigree" data-component-init="AdobeLinkTracker"><?php $t ('header-tree');?></a>
