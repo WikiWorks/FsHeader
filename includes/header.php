@@ -236,15 +236,11 @@ if ($showTempleMenu) {
           </button>
           <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu" style="">
             <li class="submenu-item"><a href="/home/etb_gettingstarted" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:gettingStarted&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-gettingstarted');?></a></li>
-            <div class="submenu-divider"></div>
             <li class="submenu-item"><a href="/ask/landing" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:helpCenter&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-helpcenter');?></a></li>
-            <li class="submenu-item"><a href="/ask/landing?search=Getting%20Started&amp;show=lessons&amp;message=true" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:learningCenter&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-learningcenter');?></a></li>
-            <div class="submenu-divider"></div>
             <li class="submenu-item"><a href="/help/" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:contactUs&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-contactus');?></a></li>
             <li class="submenu-item"><a href="/help/communities" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:community&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-community');?></a></li>
             <li class="submenu-item"><a href="/ask/mycases#/" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:myCases&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-mycases');?></a></li>
             <li class="submenu-item"><a href="/wiki/en/Main_Page" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:researchWiki&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-researchwiki');?></a></li>
-            <div class="submenu-divider"></div>
             <li class="submenu-item"><a href="/help/helper" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:helperResources&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-consultantresources');?></a></li>
           </ul>
         </div>
