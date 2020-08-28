@@ -2,29 +2,6 @@ window.FS = window.FS || {};
 
 $(document).ready(function(e) {
 
-	/** Guided Research Image Map */
-	(function() {
-		// test if we're on the Guided Research page
-		if (/Guided_Research_for_Online_Records/.test(document.location.href)) {
-		  document.querySelector('#mw-content-text p').innerHTML = "<div style='width: 1000px;'><location-map></location-map></div>";
-  
-		  var polyfill = document.createElement('script');
-		  polyfill.type = 'text/javascript';
-		  polyfill.async = true;
-		  polyfill.src = 'https://edge.fscdn.org/assets/components/mapFiles/webcomponentsjs/webcomponents-lite-60405515c49744988a6a24e03dedf15a.js';
-		  var s = document.getElementsByTagName('script')[0];
-		  s.parentNode.insertBefore(polyfill, s);
-  
-		  var locationMap = document.createElement('link');
-		  locationMap.rel = 'import';
-  /* CHANGE NEEDED: update URL below every time the location-map.html is changed */
-		  locationMap.href = 'https://gist.githubusercontent.com/ahancey/a86414a07c7c1466cc36ffb790a0817d/raw/748a662f88adf92729d925ebf5fb1ce26ec0bb38/location-map.html';
-		 var s = document.getElementsByTagName('script')[0];
-		  s.parentNode.insertBefore(locationMap, s);
-  
-	  }
-  })();
-
     // responsive image maps
 	$('img[usemap]').rwdImageMaps();
 
