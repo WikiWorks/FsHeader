@@ -230,19 +230,10 @@ if ($showTempleMenu) {
     <div class="right">
       <nav id="secondaryNav">
         <div class="nav-menu-parent">
-          <button id="helpLink" class="nav-menu-trigger" aria-haspopup="true" aria-expanded="false" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help&quot;}" data-component-init="AdobeLinkTracker">
+          <button id="helpLink" aria-haspopup="true" aria-expanded="false" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help&quot;}" data-component-init="AdobeLinkTracker">
             <img src="https://edge.fscdn.org/assets/components/hf/assets/img/icons/header-help-c9bf91771596fb21d30797738c2aa37a.svg">
             <span class="nav-trigger-text"><?php $t ('header-help');?></span>
           </button>
-          <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu" style="">
-            <li class="submenu-item"><a href="/home/etb_gettingstarted" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:gettingStarted&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-gettingstarted');?></a></li>
-            <li class="submenu-item"><a href="/ask/landing" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:helpCenter&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-helpcenter');?></a></li>
-            <li class="submenu-item"><a href="/help/" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:contactUs&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-contactus');?></a></li>
-            <li class="submenu-item"><a href="/help/communities" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:community&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-community');?></a></li>
-            <li class="submenu-item"><a href="/ask/mycases#/" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:myCases&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-mycases');?></a></li>
-            <li class="submenu-item"><a href="/wiki/en/Main_Page" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:researchWiki&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-researchwiki');?></a></li>
-            <li class="submenu-item"><a href="/help/helper" class="submenu-link" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_help:helperResources&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-consultantresources');?></a></li>
-          </ul>
         </div>
         
          <a href="/messaging/mailbox" id="messagesLink" style="display:none;" target="_blank" data-test="header-nav-messages" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;li_hdr9_msgs&quot;}" data-component-init="AdobeLinkTracker">
