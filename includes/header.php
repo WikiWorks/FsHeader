@@ -81,8 +81,8 @@ if ( $sessionId ) {
 <header id="header2019" class="logged-out">
   <div class="top">
     <div class="left">
-      <h1>
-        <a class="logo" href="/" data-test="header-logo" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_logo&quot;}" data-component-init="AdobeLinkTracker"><span class="sr-only">Family Search</span></a></h1>
+      <header>
+        <a class="logo" href="/" data-test="header-logo" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_logo&quot;}" data-component-init="AdobeLinkTracker"><span class="sr-only">Family Search</span></a></header>
       <nav id="primaryNav">
         
         <div class="primary-nav-item nav-menu-parent ">
