@@ -8,7 +8,7 @@
 				<ul id="menu-footer-menu" class="menu" style="margin:0!important;">
 					<!-- About -->
 					<li id="menu-item-39483" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39483">
-						<a href="/home/about"><?php $t ('footer-about');?></a>
+						<a href="/<?php $t ('header-language');?>/about"><?php $t ('footer-about');?></a>
 					</li>
 					<!-- Volunteer -->
 					<li id="menu-item-39482" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39482">
