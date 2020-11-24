@@ -71,7 +71,7 @@ h1, h2 {
 }
 
 h3, h4, h5, h6 {
-	font-family: Helvetica, Verdana, serif;
+	font-family: Helvetica, Verdana, serif !important;
 }
 
 pre, code, tt, kbd, samp, .mw-code {
