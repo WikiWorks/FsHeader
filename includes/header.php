@@ -1,5 +1,5 @@
 <?php
- // var_dump($wgUser);
+
 /**
  * Returns the session identifier for the user.
  * Otherwise returns false for an anonymous user.
@@ -7,7 +7,6 @@
  * @return [mixed] session identifier (which would evaluate to true) or false
  */
 function getSessionIdFromCookie ($cookieName="fssessionid") {
-	$sessionId = null;
 	$sessionId = @$_COOKIE["$cookieName"];
 
 	if ( !is_null( $sessionId ) && !empty( $sessionId ) ) {
@@ -84,7 +83,7 @@ if ( $sessionId ) {
       <header>
         <a class="logo" href="/" data-test="header-logo" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_logo&quot;}" data-component-init="AdobeLinkTracker"><span class="sr-only">Family Search</span></a></header>
       <nav id="primaryNav">
-        
+
         <div class="primary-nav-item nav-menu-parent ">
           <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_tree" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-familytree');?></button>
           <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu" style="">
@@ -108,7 +107,7 @@ if ( $sessionId ) {
             </li>
           </ul>
         </div>
-      
+
         <div class="primary-nav-item nav-menu-parent ">
           <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_srch" data-component-init="AdobeLinkTracker"><?php $t ('header-search');?></button>
           <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
@@ -135,7 +134,7 @@ if ( $sessionId ) {
             </li>
           </ul>
         </div>
-        
+
         <div class="primary-nav-item nav-menu-parent ">
           <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_photos" data-component-init="AdobeLinkTracker"><?php $t ('header-memories');?></button>
           <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
@@ -151,9 +150,9 @@ if ( $sessionId ) {
             <li class="submenu-item">
               <a href="/photos/find" class="submenu-link" data-config="lo_hdr9_photos:find" data-test="find" data-component-init="AdobeLinkTracker"><?php $t ('header-find');?></a>
             </li>
-          </ul>            
+          </ul>
         </div>
-        
+
         <div class="primary-nav-item nav-menu-parent ">
           <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_indexing" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-indexing');?></button>
           <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
@@ -171,7 +170,7 @@ if ( $sessionId ) {
             </li>
           </ul>
         </div>
-        
+
         <div class="primary-nav-item nav-menu-parent ">
           <button class="primary-nav-text nav-menu-trigger" data-config="lo_hdr9_activities" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-activities');?></button>
           <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu" style="">
@@ -217,13 +216,13 @@ if ($showTempleMenu) {
               <a href="/temple/ordinancesready" class="submenu-link" data-component="AdobeLinkTracker"
               data-config="li_hdr9_temple:ordinancesReady" data-test="ordinancesReady"><?php $t ('header-ordinancesready');?></a>
             </li>
-          </ul>   
+          </ul>
         </div>
 
 <?php
 }
 ?>
-    
+
       </nav>
     </div>
 
@@ -235,17 +234,17 @@ if ($showTempleMenu) {
             <span class="nav-trigger-text"><?php $t ('header-help');?></span>
           </button>
         </div>
-        
+
          <a href="/messaging/mailbox" id="messagesLink" style="display:none;" target="_blank" data-test="header-nav-messages" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;li_hdr9_msgs&quot;}" data-component-init="AdobeLinkTracker">
             <img src="https://edge.fscdn.org/assets/components/hf/assets/img/icons/header-messages-f81399c87551f2691dd276a77bc31216.svg">
             <span class="unread-message-badge"></span>
             <span class="nav-trigger-text"><?php $t ('header-messages');?></span>
-         </a>  
+         </a>
          <a class="highlight" id="signinLink" href="/wiki/<?php $t ('header-language');?>/Special:UserLogin?returnto=<?php echo ( preg_replace (['%^/wiki/(de|en|es|fr|it|ja|ko|pt|ru|sv|zh)/%', '%\?.*$%'], '', $_SERVER['REQUEST_URI']) );?>"><?php $t ('header-signin');?></a>
          <a href="/register/" id="registerLink" class="highlight border" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_register&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-createaccount');?></a>
-         
+
          <a id="logoutLink" style="display:none; float:left;" class="highlight" href="/wiki/<?php $t ('header-language');?>/Special:UserLogout?returnto=<?php echo ( preg_replace (['%^/wiki/(de|en|es|fr|it|ja|ko|pt|ru|sv|zh)/%', '%\?.*$%' ], '', $_SERVER['REQUEST_URI']) );?>" class="user-submenu-link" data-test="NavigationLogOut" data-component="AdobeLinkTracker" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;li_hdr_signout&quot;}"><?php $t ('header-signout');?></a>
-        
+
         <button id="hamburgerLink">
           <img src="https://edge.fscdn.org/assets/components/hf/assets/img/icons/header-hamburger-5eccc4487e684c3f2bdb4f6810d56851.svg">
         </button>
@@ -262,9 +261,9 @@ if ($showTempleMenu) {
       </button>
       <div id="loAccount">
         <a class="highlight" id="signinLink" href="/wiki/<?php $t ('header-language');?>/Special:UserLogin?returnto=<?php echo ( preg_replace (['%^/wiki/(de|en|es|fr|it|ja|ko|pt|ru|sv|zh)/%', '%\?.*$%'], '', $_SERVER['REQUEST_URI']) );?>"><?php $t ('header-signin');?></a>
-        <a href="/register/" id="registerLink" class="highlight border" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_register&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-createaccount');?></a>    
+        <a href="/register/" id="registerLink" class="highlight border" data-config="{&quot;type&quot;: &quot;o&quot;, &quot;name&quot;: &quot;lo_hdr9_register&quot;}" data-component-init="AdobeLinkTracker"><?php $t ('header-createaccount');?></a>
       </div>
-      
+
       <div class="">
         <div class="menuRow menuTrigger" data-config="lo_hdr9_tree" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-familytree');?></div>
         <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
@@ -283,9 +282,9 @@ if ($showTempleMenu) {
           <li class="menuRow">
             <a href="/tree/contributions" class="submenu-link" data-config="lo_hdr9_tree:contributions" data-test="contributions" data-component-init="AdobeLinkTracker"><?php $t ('header-contributions');?></a>
           </li>
-        </ul>          
+        </ul>
       </div>
-      
+
       <div class="">
         <div class="menuRow menuTrigger" data-config="lo_hdr9_srch" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-search');?></div>
         <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
@@ -312,7 +311,7 @@ if ($showTempleMenu) {
           </li>
         </ul>
       </div>
-      
+
       <div class="">
         <div class="menuRow menuTrigger" data-config="lo_hdr9_photos" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-memories');?></div>
         <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
@@ -330,7 +329,7 @@ if ($showTempleMenu) {
           </li>
         </ul>
       </div>
-    
+
       <div class="">
         <div class="menuRow menuTrigger" data-config="lo_hdr9_indexing" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-indexing');?></div>
         <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
@@ -348,7 +347,7 @@ if ($showTempleMenu) {
           </li>
         </ul>
       </div>
-      
+
       <div class="">
         <div class="menuRow menuTrigger" data-config="lo_hdr9_activities" data-component-init="AdobeLinkTracker" aria-expanded="false"><?php $t ('header-activities');?></div>
         <ul class="submenu" aria-hidden="true" data-submenu="" aria-label="Submenu">
@@ -390,7 +389,7 @@ if ($showTempleMenu) {
         <li class="menuRow">
           <a href="/temple/shared" class="submenu-link" data-component="AdobeLinkTracker"
           data-config="li_hdr9_temple:shared" data-test="shared"><?php $t ('header-shared');?></a>
-        </li>      
+        </li>
         <li class="menuRow">
           <a href="/temple/ordinancesready" class="submenu-link" data-component="AdobeLinkTracker"
           data-config="li_hdr9_temple:ordinancesReady" data-test="ordinancesReady"><?php $t ('header-ordinancesready');?></a>

@@ -21,7 +21,8 @@
 	},
 	"Hooks": {
 		"BeforePageDisplay": "MediaWiki\\Extension\\FsHeader\\Hooks::onBeforePageDisplay",
-		"SkinTemplateOutputPageBeforeExec": "MediaWiki\\Extension\\FsHeader\\Hooks::onSkinTemplateOutputPageBeforeExec"
+		"SkinAfterBottomScripts": "MediaWiki\\Extension\\FsHeader\\Hooks::onSkinAfterBottomScripts",
+		"VectorGeneratedSkinData": "MediaWiki\\Extension\\FsHeader\\Hooks::onVectorGeneratedSkinData"
 	},
 	"MessagesDirs": {
 		"FsHeader": [

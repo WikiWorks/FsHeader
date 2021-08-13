@@ -47,12 +47,8 @@ class Hooks {
 		return true;
 	}
 
-	public static function onSkinTemplateOutputPageBeforeExec( SkinTemplate &$skinTemplate, QuickTemplate &$tpl ){
-
-		global $wgUser;
-
-		$out = $tpl->getSkin()->getOutput();
-
+	public static function onSkinAfterBottomScripts( Skin $skin, &$text ) {
+		$out = $skin->getOutput();
 		$t = function ( $key ) use ( $out ) {
 			echo $out->msg( $key )->inContentLanguage()->escaped();
 		};
@@ -62,7 +58,14 @@ class Hooks {
 		$html = ob_get_contents();
 		ob_end_clean();
 
-		$tpl->set( 'bottomscripts', $tpl->get( 'bottomscripts' ) . $html );
+		$text .= $html;
+	}
+
+	public static function onVectorGeneratedSkinData( Skin $skin, &$commonSkinData ) {
+		$out = $skin->getOutput();
+		$t = function ( $key ) use ( $out ) {
+			echo $out->msg( $key )->inContentLanguage()->escaped();
+		};
 
 		ob_start();
 		require "header.php";
@@ -70,8 +73,6 @@ class Hooks {
 		// get rid of the output buffer so it isn't flushed automatically
 		ob_end_clean();
 
-		$tpl->set( 'headelement', $tpl->get( 'headelement' ) . $html );
-
-		return true;
+		$commonSkinData['html-headelement'] .= $html;
 	}
 }
